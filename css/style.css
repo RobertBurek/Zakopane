@@ -92,38 +92,56 @@ section {
     position: relative;
     margin: 0 0 60px 0;
     text-align: center;
-    /* border: 2px solid #474550; */
-    /* border-radius: 30px 50% 25px; */
-}
-
-.stoneLeft {
-    background-color: #949b9b;
-    color: #ffffff;
-    padding: 15px;
-    border: 2px solid #949b9b;
-    border-radius: 30px 50% 25px;
-    letter-spacing: 2px;
-}
-
-.stoneRight {
-    background-color: #949b9b;
-    color: #ffffff;
-    padding: 15px;
-    border: 2px solid #949b9b;
-    border-radius: 30px 50% 25px;
-    letter-spacing: 2px;
 }
 
 .stone {
     background-color: #949b9b;
     color: #ffffff;
-    padding: 10px;
     border: 2px solid #949b9b;
-    /* border-radius: 30px 60% 25px 15px; */
-    border-radius: 40px 85% 28px 19px;
     letter-spacing: 2px;
+    padding: 10px;
 }
 
+.sLeft {
+    /* padding: 15px; */
+    border-radius: 30px 50% 25px;
+}
+
+.sRight {
+    /* padding: 15px; */
+    border-radius: 30px 50% 25px;
+}
+
+.sCenter {
+    /* padding: 10px; */
+    /* border-radius: 30px 60% 25px 15px; */
+    border-radius: 40px 85% 28px 19px;
+}
+
+.about {
+    background-color: #eff5f5;
+    /* margin: 30px 0 0 0; */
+}
+
+ .about p {
+    margin: 0 10%;
+}
+
+ .features-wrapper {
+    display: flex;
+}
+
+ .feature {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    text-align: center;
+    margin: 24px 0 0 0;
+}
+
+.feature-description {
+    margin: 15%;
+    text-align: justify;
+}
 
 
 
