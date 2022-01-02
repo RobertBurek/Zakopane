@@ -143,6 +143,20 @@ section {
     text-align: justify;
 }
 
+.feature i {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: #ffffff;
+    font-size: 60px;
+    background-color: #949b9b;
+    border-radius: 50% 50% 0 0;
+}
+
+.feature i:hover {
+    background-color: darken(#7c7a85, 3%);
+    color: #474550;
+}
 
 
 /* ------------------------------------------------ */
