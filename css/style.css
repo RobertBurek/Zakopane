@@ -1,0 +1,13 @@
+video {
+    height: 300px;
+}
+
+video:focus {
+    outline-width:1px;
+    outline-style:dotted;
+  }
+
+  img {
+      height: 300px;
+      width: 300px;
+  }
