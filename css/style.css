@@ -167,9 +167,9 @@ section {
     background-position: center center;
     background-attachment: fixed;
     margin-bottom: 20px;
-  }
-  
-  .statement p, .statement strong {
+}
+
+.statement p, .statement strong {
     margin: 0;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -177,7 +177,28 @@ section {
     font-weight: 700;
     color: #ffffe6;
     letter-spacing: 2px;
-  }
+}
+
+.boxes {
+    background-color: #11203E;
+    padding: 80px 0;
+}
+  
+.boxes .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 55%;
+}
+  
+.boxes .box {
+    text-align: center;
+    color: #FFC312;
+    margin: 0 auto;
+}
 
 
 /* ------------------------------------------------ */
@@ -186,7 +207,11 @@ section {
 
 
 video {
+    /* object-fit: none; */
     height: 400px;
+    /* margin: 30px; */
+    margin-left: -4px;
+    margin-right: -4px;
 }
 
 video:focus {
@@ -194,7 +219,11 @@ video:focus {
     outline-style:dotted;
 }
 
-img {
-    height: 300px;
-    width: 300px;
+/* video::before {
+    content: url(../img/kadrFilmowy.jpg);
+  } */
+
+  .container img {
+    height: 400px;
+    /* width: 300px; */
 }
