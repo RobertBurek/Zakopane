@@ -38,6 +38,7 @@ section {
     max-width: 980px;
     margin: 0 auto;
     padding: 0 20px;
+    text-align: center;
 }
 
 .splash {
@@ -104,12 +105,12 @@ section {
 
 .sLeft {
     /* padding: 15px; */
-    border-radius: 30px 50% 25px;
+    border-radius: 35px 50% 25px;
 }
 
 .sRight {
     /* padding: 15px; */
-    border-radius: 30px 50% 25px;
+    border-radius: 25px 50% 35px;
 }
 
 .sCenter {
@@ -141,12 +142,13 @@ section {
 .feature-description {
     margin: 15%;
     text-align: justify;
+    line-height: 1.3;
 }
 
 .feature i {
     width: 100px;
     height: 100px;
-    line-height: 100px;
+    line-height: 110px;
     color: #ffffff;
     font-size: 60px;
     background-color: #949b9b;
@@ -157,6 +159,25 @@ section {
     background-color: darken(#7c7a85, 3%);
     color: #474550;
 }
+
+.statement {
+    background-image: url("../img/background/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin-bottom: 20px;
+  }
+  
+  .statement p, .statement strong {
+    margin: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffe6;
+    letter-spacing: 2px;
+  }
 
 
 /* ------------------------------------------------ */
