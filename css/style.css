@@ -3,6 +3,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 *:focus {
@@ -35,7 +37,7 @@ section {
 }
 
 .container {
-    max-width: 980px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
@@ -153,6 +155,7 @@ section {
     font-size: 60px;
     background-color: #949b9b;
     border-radius: 50% 50% 0 0;
+    margin: 20px 0;
 }
 
 .feature i:hover {
@@ -166,7 +169,7 @@ section {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .statement p, .statement strong {
@@ -179,26 +182,88 @@ section {
     letter-spacing: 2px;
 }
 
-.boxes {
-    background-color: #11203E;
-    padding: 80px 0;
-}
+/* .boxes { */
+    /* background-color: #eff5f5; */
+    /* background-color: #11203E; */
+    /* padding: 80px 0; */
+/* } */
   
-.boxes .container {
+.boxes {
+    /* background-color: #eff5f5; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 55%;
+}
+
+#location strong {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #474550;
+    letter-spacing: 2px;
 }
   
-.boxes .box {
+.box {
     text-align: center;
-    color: #FFC312;
-    margin: 0 auto;
+    color: #474550;
+    /* color: honeydew; */
+    /* margin: 0 auto; */
+    font-size: 2.5vw;
+    padding: 10px;
+    width: 50%;
 }
+
+iframe {
+    width: 100%;
+}
+
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------FORMULARZ------------------------ */
+
+.formField {
+    font: inherit; 
+    border: 1px solid #ccc; 
+    border-radius: 3px; 
+    margin: 3px 0 10px 0; 
+    padding: 3px 0
+}
+textarea.formField {
+    width: 300px; 
+    height: 70px
+}
+#sendBtn {
+    cursor:pointer;
+    background: #ccc; 
+    background: linear-gradient(#ddd 0, #eee 100%); 
+    border: 1px solid #ccc; line-height: 32px; 
+    font-size: 14px;
+    padding: 0 25px; 
+    border-radius: 3px;
+}
+#send_form_status {
+    border: 1px dashed #ccc;
+    display: none; 
+    padding: 0 10px; 
+    margin: 10px 0;
+}
+.status_ok {
+    color: #060
+}
+.status_err {
+    color: #F00;
+}
+
+/* ------------------FORMULARZ------------------------ */
+
+
 
 
 /* ------------------------------------------------ */
@@ -207,23 +272,23 @@ section {
 
 
 video {
-    /* object-fit: none; */
     height: 400px;
-    /* margin: 30px; */
     margin-left: -4px;
     margin-right: -4px;
 }
 
 video:focus {
-    outline-width:1px;
-    outline-style:dotted;
+    outline-width: 1px;
+    outline-style: dotted;
 }
 
-/* video::before {
-    content: url(../img/kadrFilmowy.jpg);
-  } */
-
-  .container img {
+.container img {
     height: 400px;
-    /* width: 300px; */
 }
+
+/* ---------------------------------------------GOOGLE----------------------------------------------- */
+
+iframe div.place-card.place-card-large {
+    display: none !important;
+}
+/* ---------------------------------------------GOOGLE----------------------------------------------- */
