@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/1085229b76.js" crossorigin="anonymous"></script>
 
+    <!-- <script src="/js/jquery.min.js"></script> -->
     <script src="//static.rmt.pl/cache.ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -78,7 +79,7 @@
             </div>
         </div>
     </section>
-    <section class="statement">
+    <section class="statement" id="myFoto">
         <div class="container">
             <strong class="section-title">Album</strong>
             <strong class="section-title"> foto</strong>
@@ -88,15 +89,18 @@
         <div class="container">
             <strong class="section-title">Album</strong>
             <strong class="section-title"> video</strong>
-            <div>
+        </div>
+        <div class="video">
+            <div class="blockFilm">
                 <img src="./img/tasmaFilmowa3.png"></img>
                 <video src="./video/bedroom.mp4" controls loop></video>
-                <img src="./img/tasmaFilmowa3.png" style="margin-right: 30px;"></img>
+                <img src="./img/tasmaFilmowa3.png"></img>
+            </div>
+            <div class="blockFilm">
                 <img src="./img/tasmaFilmowa3.png"></img>
                 <video src="./video/livingRoom.mp4" controls loop></video>
                 <img src="./img/tasmaFilmowa3.png"></img>
             </div>
-            <div></div>
         </div>
     </section>
 
@@ -113,11 +117,9 @@
             <div class="box">
                 <h6>Tytusa Chałubińskiego 13a</h6>
                 <h6>34-500 Zakopane</h6>
-                <br>
-                <h6>apartament.chalbinskiego</h6>
+                <h6 class="space">apartament.chalbinskiego</h6>
                 <h6>@gmail.com</h6>
-                <br>
-                <h6>+48 664 159 000</h6>
+                <h6 class="space">+48 664 159 000</h6>
             </div>
         </div>
     </section>

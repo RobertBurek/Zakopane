@@ -65,8 +65,8 @@ section {
     font-size: 50px;
     margin: 0;
     font-weight: 700;
-    letter-spacing: 3px;
-    word-spacing: 20px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
 }
 
 .main-subtitle {
@@ -226,6 +226,10 @@ h6 {
     padding: 0;
 }
 
+.space {
+    margin-top: 20px;
+}
+
 /* ------------------FORMULARZ------------------------ */
 
 .formField {
@@ -254,8 +258,11 @@ textarea.formField {
     padding: 0 10px; 
     margin: 10px 0;
 }
+#send_form_status p {
+    font-size: 15px;
+}
 .status_ok {
-    color: #060
+    color: #060;
 }
 .status_err {
     color: #F00;
@@ -269,20 +276,38 @@ textarea.formField {
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
 
+.video {
+    margin-top: 20px;
+    /* height: 400px; */
+    display: flex;
 
+    max-width: 70%;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.blockFilm {
+    flex: 0 0 50%;
+/* display: block; */
+    max-width: 50%;
+    /* display: flex; */
+}
 
 video {
     height: 400px;
     margin-left: -4px;
     margin-right: -4px;
+    /* width: 10vw; */
+    /* width: 40%; */
 }
 
-video:focus {
+/* video:focus {
     outline-width: 1px;
     outline-style: dotted;
-}
+} */
 
-.container img {
+.video img {
     height: 400px;
 }
 
@@ -292,3 +317,66 @@ iframe div.place-card.place-card-large {
     display: none !important;
 }
 /* ---------------------------------------------GOOGLE----------------------------------------------- */
+
+
+@media (max-width: 980px) {
+    .video {
+        display: block;
+        /* height: 200px; */
+    }
+    
+    .blockFilm {
+        flex: 0 0 100%;
+        max-width:100%;
+        margin-bottom: 20px;
+    }
+    .video img {
+        height: 500px;
+    }
+    video {
+        height: 500px;
+    }
+    iframe {
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 790px) {
+    .features-wrapper {
+        display: block;
+    }
+    .feature {
+        flex: 0 0 100%;
+        max-width:100%;
+        margin-bottom: 20px;
+    }
+    .video img,
+    video {
+        height: 300px;
+    }
+    .statement p, 
+    .statement strong, 
+    #location strong {
+        font-size: 2.0rem;
+    }
+    .container {
+        max-width: 90%;
+    }
+    .box {
+        font-size: 3.5vw;
+    }
+    .space {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .video img {
+        height: 200px;
+    }
+    video {
+        height: 200px;
+    }
+
+}
