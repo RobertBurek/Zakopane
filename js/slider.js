@@ -14,7 +14,6 @@ function switchSlide() {
     visible += 1;
     if(visible >= slides.length) visible = 0;
     slides[visible].style.display = "block";
-    console.log(visible);
 }
 
 

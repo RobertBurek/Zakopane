@@ -72,7 +72,8 @@ section {
 } */
 
 .page-intro {
-    flex: 0 0 400px;
+    /* flex: 0 0 400px; */
+    width: 400px;
     margin-left: 20px;
     margin-right: 8vw;
     margin-top: 20vh;
@@ -371,7 +372,7 @@ iframe div.place-card.place-card-large {
         font-size: 35px;
     }
     .page-intro {
-        flex: 0 0 300px;
+        width: 250px;
         margin-right: 6vw;
     }
     .slide > img {
@@ -411,7 +412,6 @@ iframe div.place-card.place-card-large {
         font-size: 30px;
     }
     .page-intro {
-        flex: 0 0 250px;
         margin-left: 25px;
         margin-right: 2vw;
     }
@@ -423,7 +423,7 @@ iframe div.place-card.place-card-large {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 680px) {
     .video img {
         height: 200px;
     }
@@ -439,15 +439,64 @@ iframe div.place-card.place-card-large {
     .page-intro {
         margin-left: 0;
         margin-right: 0;
-        width: 80%;
         margin: 0 auto;
         margin-top: 0px;
     }
     .slide > img {
-        height: 42vh;
+        height: 40vh;
     }
     .splash > div {
-        margin-top: 8vh;
+        margin-top: 4vh;
+    }
+    .formField {
+        padding: 0;
+        width: 80%;
+    }
+    textarea.formField {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .statement p, 
+    .statement strong, 
+    #location strong {
+        font-size: 1.2rem;
+    }
+    .feature-title,
+    .section-title {
+        font-size: 12px;
+    }
+    .feature-description,
+    .about p {
+        font-size: 10px;
+    }
+    .video img {
+        height: 180px;
+    }
+    video {
+        height: 180px;
+    }
+    #slider {
+        margin: 75px auto;
+    }
+
+    .slide > img {
+        height: 30vh;
+    }
+    .splash > div {
+        margin-top: 2vh;
+    }
+
+    .page-intro {
+        width: 166px;
+    }
+    .main-title {
+        font-size: 20px;
+    }
+    .main-subtitle {
+        font-size: 15px;
     }
 
 }
