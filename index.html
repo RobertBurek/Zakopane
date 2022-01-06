@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/1085229b76.js" crossorigin="anonymous"></script>
 
-    <!-- <script src="/js/jquery.min.js"></script> -->
-    <script src="//static.rmt.pl/cache.ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://static.rmt.pl/cache.ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
             $("html").on("submit", "#contact_form", function (e) {
@@ -35,10 +35,26 @@
 
     <section class="splash">
         <div class="page-intro">
-            <h1 class="main-title">Apartament jak hotel</h1>
-            <h2 class="main-subtitle">Super miejsce na wypoczynek</h2>
+            <h1 class="main-title"><span>Apartament</span><span> jak hotel</span></h1>
+            <h2 class="main-subtitle">Zakopane</h2>
             <a class="btn" href="#about">Więcej</a>
         </div>
+        <!-- -------------------------SLIDER------------------------------->
+        <div id="slider">
+            <div class="slide">
+                <img src="./img/apartament/foto1.jpg" alt="" />
+                <!-- <h2>Nagłówek1</h2> -->
+            </div>
+            <div class="slide">
+                <img src="./img/apartament/foto2.jpg" alt="" />
+                <!-- <h2>Nagłówek2</h2> -->
+            </div>
+            <div class="slide">
+                <img src="./img/apartament/foto3.jpg" alt="" />
+                <!-- <h2>Nagłówek3</h2> -->
+            </div>
+        </div>
+        <!-- -------------------------SLIDER------------------------------->
     </section>
     <section class="about" id="about">
         <div class="container">
@@ -156,7 +172,11 @@
     <!-- <img src="./img/apartament/foto1.jpg" alt="sypialnia pierwsze zdjęcie"> -->
 
     <!-- <script src="/js/jquery.min.js"></script> -->
-    <!-- <script src="/js/script.js"></script> -->
+    <!-- <script src="/Zakopane/js/slider.js"></script> -->
+    <script src="./js/slider.js"></script>
+
+    <!-- Development version: -->
+<!-- <script>document.write('<script src="/Zakopane/js/slider.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script> -->
 </body>
 
 </html>

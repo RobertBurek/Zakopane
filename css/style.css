@@ -27,10 +27,10 @@ a, a:hover {
     font-weight: 700;
 }
 
-img {
+/* img {
     max-width: 100%;
     height: auto;
-}
+} */
 
 section {
     padding: 60px 0;
@@ -46,18 +46,38 @@ section {
 .splash {
     position: relative;
     display: flex;
-    flex-direction: column;
-    padding: 0 24px;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    /* flex-direction: column; */
+    padding: 0 30px;
     background-image: url('../img/background/background1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
     height: 100vh;
+    /* color: #fff; */
 }
 
+.splash>div {
+    /* width: 50%; */
+    /* margin: 0 auto; */
+    text-align: center;
+    margin-top: 22vh;
+}
+
+/* .flex-intro {
+    flex: 0 0 400px;
+    margin-left: 20px;
+} */
+
 .page-intro {
+    flex: 0 0 400px;
+    margin-left: 20px;
+    margin-right: 8vw;
     margin-top: 20vh;
     text-align: center;
+    align-items: baseline;
 }
 
 .main-title {
@@ -119,6 +139,10 @@ section {
     /* padding: 10px; */
     /* border-radius: 30px 60% 25px 15px; */
     border-radius: 40px 85% 28px 19px;
+}
+
+.slide>img {
+    height: 60vh;
 }
 
 .about {
