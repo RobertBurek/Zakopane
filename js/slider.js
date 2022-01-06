@@ -10,20 +10,15 @@ function hideSlides() {
 }
 
 function switchSlide() {
-    // if(visible >= slides.length) visible = 0;
     slides[visible].style.display = "none";
-    // hideSlides();
     visible += 1;
     if(visible >= slides.length) visible = 0;
     slides[visible].style.display = "block";
-    // visible += 1;
-    // if(visible >= slides.length) visible = 0; 
     console.log(visible);
 }
 
 
 hideSlides();
-// switchSlide();
 slides[visible].style.display = "block";
 
 setInterval(switchSlide, 1500);
