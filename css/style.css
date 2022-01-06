@@ -363,6 +363,16 @@ iframe div.place-card.place-card-large {
     iframe {
         height: 200px;
     }
+    .main-title {
+        font-size: 35px;
+    }
+    .page-intro {
+        flex: 0 0 300px;
+        margin-right: 6vw;
+    }
+    .slide > img {
+        height: 55vh;
+    }
 
 }
 
@@ -393,6 +403,20 @@ iframe div.place-card.place-card-large {
     .space {
         margin-top: 10px;
     }
+    .main-title {
+        font-size: 30px;
+    }
+    .page-intro {
+        flex: 0 0 250px;
+        margin-left: 25px;
+        margin-right: 2vw;
+    }
+    .slide > img {
+        height: 52vh;
+    }
+    #slider {
+        margin-left: 7vh;
+    }
 }
 
 @media (max-width: 400px) {
@@ -401,6 +425,25 @@ iframe div.place-card.place-card-large {
     }
     video {
         height: 200px;
+    }
+    .splash {
+        flex-direction: column;
+    }
+    #slider {
+        margin: 45px auto;
+    }
+    .page-intro {
+        margin-left: 0;
+        margin-right: 0;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 0px;
+    }
+    .slide > img {
+        height: 42vh;
+    }
+    .splash > div {
+        margin-top: 8vh;
     }
 
 }
