@@ -20,4 +20,4 @@ function switchSlide() {
 hideSlides();
 slides[visible].style.display = "block";
 
-setInterval(switchSlide, 1500);
+setInterval(switchSlide, 1000);
