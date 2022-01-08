@@ -652,3 +652,21 @@ iframe div.place-card.place-card-large {
     }
 
 }
+
+@media (orientation: portrait) {
+    .bg1 {
+        background-image: url('../img/apartament/foto2.jpg');
+    }
+    .bg2 {
+        background-image: url('../img/apartament/foto5.jpg');
+    }
+    .bg3 {
+        background-image: url('../img/apartament/foto3.jpg');
+    }
+    .bg4 {
+        background-image: url('../img/apartament/foto1.jpg');
+    }
+    .bg5 {
+        background-image: url('../img/apartament/foto7.jpg');
+    }
+}
