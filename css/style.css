@@ -60,7 +60,7 @@ body, html {
 .features{
     background-color: #ffffff;
 }
-.cbp-bislideshow {
+.backgroundshow {
 	list-style: none;
 	width: 100%;
 	height: 100%;
@@ -88,7 +88,7 @@ body, html {
 }
 
 
-.cbp-bislideshow li {
+.backgroundshow li {
 	position: absolute;
 	width: 101%;
 	height: 101%;
