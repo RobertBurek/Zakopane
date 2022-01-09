@@ -225,7 +225,9 @@ section {
     margin: 20px 0;
 }
 
-.feature i:hover {
+.feature i:hover,
+.feature .stone:hover {
+    box-sizing: border-box;
     background-color: darken(#7c7a85, 3%);
     color: #474550;
 }
