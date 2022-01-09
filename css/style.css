@@ -350,6 +350,8 @@ textarea.formField {
 .from-title {
     font-size: 30px;
     padding-bottom: 20px;
+    text-shadow: #c1c1c1 2px 2px;
+    letter-spacing: 0.1em;
 }
 label {
     text-shadow: #c1c1c1 2px 2px;
