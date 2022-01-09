@@ -289,6 +289,13 @@ h6 {
 
 .footer-text {
     font-size: 13px;
+    color: #474550;
+}
+
+.footer-text a {
+    color: #474550;
+    letter-spacing: 0;
+    font-weight: 500;
 }
 
 /* ------------------FORMULARZ------------------------ */
