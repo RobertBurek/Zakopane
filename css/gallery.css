@@ -1,10 +1,28 @@
+ul {
+  list-style-type: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
 .album-foto {
+  height: 600px;
+  width: 720px;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.slides-foto li {
+  padding-top: 150px;
 }
 
 .thumbnails {
@@ -15,77 +33,86 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  line-height: 0;
+  width: 120px;
+  height: 120px;
+  padding-top: 150px;
 }
 
 .thumbnails li {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
+  height: 120px;
 }
 
 .thumbnails a {
   display: block;
+  cursor: pointer;
 }
 
 .thumbnails img {
-  width: 30vmin;
-  height: 20vmin;
+  width: 120px;
+  height: 120px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  border: 3px solid #fff;
 }
 
-.slides {
+.slides-foto {
   overflow: hidden;
-  width: 75vmin;
-  height: 100vmin;
+  width: 600px;
 }
 
-.slides li {
-  width: 75vmin;
-  height: 100vmin;
+.slides-foto li {
+  width: 600px;
+  height: 600px;
   position: absolute;
   z-index: 1;
 }
 
-.slides img {
-  height: 100vmin;
+.slides-foto img {
+  height: 600px;
+  width: 600px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  rotate: 180deg;
+  border-left: 3px solid #fff;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
 }
 
-.slides li:target {
+.slides-foto li:target {
   z-index: 3;
   -webkit-animation: slide 1s 1;
 }
 
-.slides li:not(:target) {
-  -webkit-animation: hidden 1s 1;
+.slides-foto li:not(:target) {
+  -webkit-animation: hidden 3s 1;
 }
 
 @-webkit-keyframes slide {
   0% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: rotateY(360%);
+            transform: rotateY(360%);
   }
 }
 
 @keyframes slide {
   0% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: rotateY(360%);
+            transform: rotateY(360%);
   }
 }
 

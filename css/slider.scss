@@ -1,7 +1,7 @@
-html {
-    box-sizing: border-box;
-    height: 100%;
-  }
+// html {
+//     box-sizing: border-box;
+//     height: 100%;
+//   }
   
   *,
   *::before,
@@ -10,10 +10,20 @@ html {
     margin: 0;
     padding: 0;
   }
+
+  .okno {
+    box-sizing: border-box;
+    height: 50%;
+    height: 500px;
+    width: 500px;
+  }
   
-  .container {
+  .album-foto {
     display: flex;
     justify-content: center;
+    // box-sizing: inherit;
+    // box-sizing: border-box;
+    // height: 80%;
   }
   
   .thumbnails {
@@ -37,7 +47,7 @@ html {
     }
   }
   
-  .slides {
+  .slides-foto {
     overflow: hidden;
     width: 75vmin;
     height: 100vmin;
@@ -56,12 +66,12 @@ html {
     }
   }
   
-  .slides li:target {
+  .slides-foto li:target {
     z-index: 3;
     -webkit-animation: slide 1s 1;
   }
   
-  .slides li:not(:target) {
+  .slides-foto li:not(:target) {
     -webkit-animation: hidden 1s 1;
   }
   

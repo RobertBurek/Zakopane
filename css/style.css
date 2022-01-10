@@ -31,7 +31,7 @@ body, html {
     background-image: url('../img/apartament/foto9.jpg');
 }
 .bg2 {
-    background-image: url('../img/apartament/foto13.jpg');
+    background-image: url('../img/apartament/foto7.jpg');
 }
 .bg3 {
     background-image: url('../img/apartament/foto11.jpg');
@@ -65,7 +65,7 @@ body, html {
 	z-index: -1;
 	padding: 0;
 	margin: 0;
-    background-image: url('../img/apartament/foto9.jpg');
+    /* background-image: url('../img/apartament/foto9.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -97,13 +97,15 @@ a, a:hover {
 }
 
 section {
-    padding: 60px 0;
+    padding-bottom: 60px;
+    padding-top: 40px;
 }
 
 .container {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
+    padding-bottom: 40px;
     text-align: center;
 }
 
@@ -239,7 +241,7 @@ section {
     font-size: 2.5rem;
     font-weight: 700;
     color: #ffffe6;
-    letter-spacing: 2px;
+    letter-spacing: 0.2em;
 }
 
 .boxes {
@@ -249,6 +251,11 @@ section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+}
+
+#myFoto {
+    position: relative;
+    height: 800px;
 }
 
 #location {
@@ -261,7 +268,7 @@ section {
     font-size: 2.5rem;
     font-weight: 700;
     color: #474550;
-    letter-spacing: 2px;
+    letter-spacing: 0.2em;
 }
   
 .box {
@@ -287,6 +294,7 @@ h6 {
 
 .footer-section {
     background-color: #fff;
+    text-align: center;
 }
 
 .footer-text {
@@ -433,9 +441,9 @@ iframe div.place-card.place-card-large {
     #location strong {
         font-size: 2.0rem;
     }
-    .container {
+    /* .container {
         max-width: 90%;
-    }
+    } */
     .box {
         font-size: 3.5vw;
     }
