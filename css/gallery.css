@@ -5,10 +5,6 @@ ul {
 }
 
 .album-foto {
-  height: 600px;
-  width: 720px;
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,8 +29,6 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 120px;
-  height: 120px;
   padding-top: 150px;
 }
 
@@ -42,19 +36,18 @@ ul {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
-  height: 120px;
+  height: 60px;
 }
 
 .thumbnails a {
   display: block;
   cursor: pointer;
+  height: 60px;
 }
 
 .thumbnails img {
-  width: 120px;
-  height: 120px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100px;
+  height: 60px;
   -o-object-position: top;
      object-position: top;
   border: 3px solid #fff;
@@ -62,21 +55,17 @@ ul {
 
 .slides-foto {
   overflow: hidden;
-  width: 600px;
+  width: 400px;
 }
 
 .slides-foto li {
-  width: 600px;
-  height: 600px;
   position: absolute;
   z-index: 1;
 }
 
 .slides-foto img {
-  height: 600px;
-  width: 600px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 300px;
+  width: 400px;
   -o-object-position: top;
      object-position: top;
   rotate: 180deg;
