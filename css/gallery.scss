@@ -11,8 +11,6 @@ ul {
 }
 
 .album-foto {
-    // height: 600px;
-    // width: 720px;
     // margin: 100px auto;
     // -webkit-box-sizing: inherit;
     // box-sizing: inherit;
@@ -33,8 +31,6 @@ ul {
   display: flex;
   flex-direction: column;
   // line-height: 0;
-  // width: 120px;
-  // height: 120px;
   padding-top: $padding-top-album-foto;
 
   li {
@@ -66,8 +62,6 @@ ul {
   // height: 100vmin;
   
   li {
-    // width: 100%;
-    // height: 100%;
     position: absolute;
     z-index: 1;
   }
