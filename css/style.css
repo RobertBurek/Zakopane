@@ -104,7 +104,7 @@ section {
 .container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 60px;
     padding-bottom: 40px;
     text-align: center;
 }
@@ -318,11 +318,12 @@ textarea:focus-visible {
     border: 1px solid #ccc; 
     border-radius: 3px; 
     margin: 3px 0 10px 0; 
-    padding: 3px 0
+    padding: 3px 0;
+    width: 30vw;
 }
 textarea.formField {
-    width: 300px; 
-    height: 70px
+    width: 45vw; 
+    height: 10vh;
 }
 #sendBtn {
     cursor: pointer;
