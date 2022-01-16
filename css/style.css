@@ -471,6 +471,17 @@ iframe div.place-card.place-card-large {
     label {
         font-size: 15px;
     }
+    section {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .container {
+        padding: 0 20px;
+        padding-bottom: 20px;
+    }
+    #myFoto {
+        height: 430px;
+    }
 }
 
 @media (max-width: 500px) {

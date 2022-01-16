@@ -1,9 +1,9 @@
-$width-img-slides : 400px;
+$width-img-slides : 300px;
 $height-img-slides : 300px;
-$width-img-thumbnails : 100px;
+$width-img-thumbnails : 80px;
 // $height-img-thumbnails : 120px;
 $quantity-thumbnails : 5;
-$padding-top-album-foto : 150px;
+$padding-top-album-foto : 90px;
 
 ul {
   list-style-type: none;
@@ -71,7 +71,7 @@ ul {
     width: $width-img-slides;
     // object-fit: cover;
     object-position: top;
-    rotate: 180deg;
+    // rotate: 180deg;
     border-left: 3px solid #fff;
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;

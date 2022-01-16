@@ -18,7 +18,7 @@ ul {
 }
 
 .slides-foto li {
-  padding-top: 150px;
+  padding-top: 90px;
 }
 
 .thumbnails {
@@ -29,7 +29,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 150px;
+  padding-top: 90px;
 }
 
 .thumbnails li {
@@ -46,7 +46,7 @@ ul {
 }
 
 .thumbnails img {
-  width: 100px;
+  width: 80px;
   height: 60px;
   -o-object-position: top;
      object-position: top;
@@ -55,7 +55,7 @@ ul {
 
 .slides-foto {
   overflow: hidden;
-  width: 400px;
+  width: 300px;
 }
 
 .slides-foto li {
@@ -65,10 +65,9 @@ ul {
 
 .slides-foto img {
   height: 300px;
-  width: 400px;
+  width: 300px;
   -o-object-position: top;
      object-position: top;
-  rotate: 180deg;
   border-left: 3px solid #fff;
   border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;
