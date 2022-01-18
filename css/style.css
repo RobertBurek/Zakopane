@@ -71,6 +71,10 @@ body, html {
     background-position: center bottom;
 }
 
+.bgStart {
+        background-image: url('../img/apartament/foto9.jpg');
+}
+
 .background-show li {
 	position: absolute;
 	width: 101%;

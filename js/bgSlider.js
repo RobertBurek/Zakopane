@@ -1,7 +1,7 @@
-var sliderBackground = document.getElementById("backgroundShow")
-var slidersBackground = sliderBackground.getElementsByTagName("li");
+let sliderBackground = document.getElementById("backgroundShow")
+let slidersBackground = sliderBackground.getElementsByTagName("li");
 
-var next = 0;
+let next = 0;
 
 function hideBackgroundSlides() {
     for(var i = 0; i < slidersBackground.length; i++) {
@@ -12,11 +12,16 @@ function hideBackgroundSlides() {
 function switchBackgroundSlide() {
     slidersBackground[next].style.opacity = "0";
     next += 1;
-    if(next >= slidersBackground.length) next = 0;
+    if(next >= slidersBackground.length) {
+        next = 0;
+        sliderBackground.classList.remove("bgStart");
+    }
     slidersBackground[next].style.opacity = "1";
 }
 
 hideBackgroundSlides();
-slidersBackground[next].style.opacity = "1";
 
-setInterval(switchBackgroundSlide, 3000);
+setTimeout(() => {
+    slidersBackground[next].style.opacity = "1";
+    setInterval(switchBackgroundSlide, 3000);
+}, 6000);
