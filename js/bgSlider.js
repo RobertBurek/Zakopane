@@ -14,7 +14,6 @@ function switchBackgroundSlide() {
     next += 1;
     if(next >= slidersBackground.length) {
         next = 0;
-        sliderBackground.classList.remove("bgStart");
     }
     slidersBackground[next].style.opacity = "1";
 }
@@ -25,3 +24,7 @@ setTimeout(() => {
     slidersBackground[next].style.opacity = "1";
     setInterval(switchBackgroundSlide, 3000);
 }, 6000);
+
+setTimeout(() => {
+    sliderBackground.classList.remove("bgStart")
+}, 8000);

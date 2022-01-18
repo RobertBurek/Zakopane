@@ -126,20 +126,22 @@ section {
 
 .splash > div {
     text-align: center;
-    margin-top: 22vh;
+    /* margin: 30% auto; */
+    margin: 20vh auto;
+    /* margin-top: 22vh; */
 }
 
 .page-intro {
-    width: 400px;
-    margin-left: 20px;
-    margin-right: 8vw;
-    margin-top: 20vh;
+    width: 520px;
+    /* margin-left: 20px; */
+    /* margin-right: 8vw; */
+    /* margin-top: 20vh; */
     text-align: center;
     align-items: baseline;
 }
 
 .main-title {
-    font-size: 50px;
+    font-size: 70px;
     margin: 0;
     font-weight: 700;
     letter-spacing: 5px;
@@ -147,10 +149,11 @@ section {
 }
 
 .main-subtitle {
-    margin: 12px 0 60px 0;
+    margin: 30px 0 70px 0;
     font-weight: 700;
     letter-spacing: 2px;
     word-spacing: 0px;
+    font-size: 40px;
 }
 
 .btn {
@@ -257,9 +260,14 @@ section {
             align-items: center;
 }
 
-#myFoto {
+.myFoto {
     position: relative;
     height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+    background-image: url('../img/apartament/foto9.jpg');
 }
 
 #location {
@@ -514,7 +522,7 @@ iframe div.place-card.place-card-large {
         height: 40vh;
     }
     .splash > div {
-        margin-top: 4vh;
+        /* margin-top: 4vh; */
     }
     .formField {
         padding: 0;
@@ -553,7 +561,7 @@ iframe div.place-card.place-card-large {
         height: 30vh;
     }
     .splash > div {
-        margin-top: 2vh;
+        /* margin-top: 2vh; */
     }
     .page-intro {
         width: 166px;
@@ -586,7 +594,7 @@ iframe div.place-card.place-card-large {
 
 @media (max-height: 350px) {
     .splash > div {
-        margin-top: 12vh;
+        /* margin-top: 12vh; */
     }
     .main-title {
         font-size: 25px;
