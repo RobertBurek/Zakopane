@@ -27,20 +27,34 @@ body, html {
     background-position: center bottom;
     height: 100vh;
 }
+
+
 .bg1 {
-    background-image: url('../img/apartament/foto9.jpg');
+    background-image: url('../img/apartament/foto8-bg-hor.jpg');
 }
 .bg2 {
-    background-image: url('../img/apartament/foto7.jpg');
+    background-image: url('../img/apartament/foto7-bg-hor.jpg');
 }
 .bg3 {
-    background-image: url('../img/apartament/foto11.jpg');
+    background-image: url('../img/apartament/foto11-bg-hor.jpg');
 }
 .bg4 {
-    background-image: url('../img/apartament/foto12.jpg');
+    background-image: url('../img/apartament/foto12-bg-hor.jpg');
 }
 .bg5 {
-    background-image: url('../img/apartament/foto10.jpg');
+    background-image: url('../img/apartament/foto10-bg-hor.jpg');
+}
+.bg6 {
+    background-image: url('../img/apartament/foto1-bg-hor.jpg');
+}
+.bg7 {
+    background-image: url('../img/apartament/foto2-bg-hor.jpg');
+}
+.bg8 {
+    background-image: url('../img/apartament/foto3-bg-hor.jpg');
+}
+.bgStart {
+    background-image: url('../img/apartament/foto9-bg-hor.jpg');
 }
 
 .main{
@@ -69,10 +83,6 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
-}
-
-.bgStart {
-        background-image: url('../img/apartament/foto9.jpg');
 }
 
 .background-show li {
@@ -156,7 +166,7 @@ section {
     font-size: 40px;
 }
 
-.btn {
+/* .btn {
     padding: 18px 24px 18px 24px;
     font-size: 14px;
     background-color: #949b9b;
@@ -168,7 +178,7 @@ section {
     background-color: darken(#7c7a85, 3%);
     color: #474550;
     border-radius: 60% 40px;
-}
+} */
 
 .section-title {
     position: relative;
@@ -270,11 +280,11 @@ section {
     background-image: url('../img/apartament/foto9.jpg');
 }
 
-#location {
+.location {
     background-color: #eff5f5;
 }
 
-#location strong {
+.location strong {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 2.5rem;
@@ -337,7 +347,8 @@ textarea.formField {
     width: 45vw; 
     height: 10vh;
 }
-#sendBtn {
+/* #sendBtn,  */
+.btn {
     cursor: pointer;
     background: linear-gradient(#5e5c5c 0, #c8c4c4 100%);
     border: 1px solid #ccc;
@@ -349,10 +360,30 @@ textarea.formField {
     color: #fff;
     letter-spacing: 0.2em;
 }
-#sendBtn:hover {
+/* #sendBtn:hover,  */
+.btn:hover {
     color: #474550;
     background: linear-gradient(#888585 0, #ece9e9 100%);
 }
+a.btn {
+    display: block;
+    width: 108px;
+    margin: 0 auto;
+}
+/* .btn {
+    padding: 18px 24px 18px 24px;
+    font-size: 14px;
+    background-color: #949b9b;
+    color: #ffffff;
+    border-radius: 30px 50% 25px;
+} */
+
+/* .btn:hover {
+    background-color: darken(#7c7a85, 3%);
+    color: #474550;
+    border-radius: 60% 40px;
+} */
+
 #send_form_status {
     border: 1px dashed #ccc;
     display: none; 
@@ -371,13 +402,14 @@ textarea.formField {
 .from-title {
     font-size: 30px;
     padding-bottom: 20px;
-    text-shadow: #c1c1c1 2px 2px;
+    text-shadow: #fff 2px 2px;
     letter-spacing: 0.1em;
 }
 label {
-    text-shadow: #c1c1c1 2px 2px;
+    text-shadow: #fff 2px 2px;
     font-size: 20px;
     font-weight: 700;
+    letter-spacing: 0.1em;
 }
 /* ------------------FORMULARZ------------------------ */
 
@@ -410,6 +442,36 @@ iframe div.place-card.place-card-large {
 }
 /* ------------------GOOGLE-MAPS---------------------- */
 
+.contactForm {
+    position: relative; 
+    /* height: 100vh; */
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('../img/apartament/foto9.jpg'); */
+    background-size: cover;
+    z-index: -1;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    /* background-color: #fff; */
+    background-image: url('../img/apartament/foto2-bg-hor.jpg');
+    /* background-color: rgba(75, 72, 72, .5); */
+}
+.contactForm::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    /* background-color: rgba(0,0,0,0.25); */
+    background-color: rgba(72, 72, 72, 0.7);
+
+}
 
 
 /* ------------------RESPONZYWNOŚĆ-------------------- */
@@ -576,19 +638,31 @@ iframe div.place-card.place-card-large {
 
 @media (orientation: portrait) {
     .bg1 {
-        background-image: url('../img/apartament/foto2.jpg');
+        background-image: url('../img/apartament/foto8.jpg');
     }
     .bg2 {
-        background-image: url('../img/apartament/foto5.jpg');
+        background-image: url('../img/apartament/foto7.jpg');
     }
     .bg3 {
-        background-image: url('../img/apartament/foto3.jpg');
+        background-image: url('../img/apartament/foto11.jpg');
     }
     .bg4 {
-        background-image: url('../img/apartament/foto1.jpg');
+        background-image: url('../img/apartament/foto12.jpg');
     }
     .bg5 {
-        background-image: url('../img/apartament/foto7.jpg');
+        background-image: url('../img/apartament/foto10.jpg');
+    }
+    .bg6 {
+        background-image: url('../img/apartament/foto1.jpg');
+    }
+    .bg7 {
+        background-image: url('../img/apartament/foto2.jpg');
+    }
+    .bg8 {
+        background-image: url('../img/apartament/foto3.jpg');
+    }
+    .bgStart {
+        background-image: url('../img/apartament/foto9.jpg');
     }
 }
 

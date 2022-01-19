@@ -2,6 +2,7 @@ let sliderBackground = document.getElementById("backgroundShow")
 let slidersBackground = sliderBackground.getElementsByTagName("li");
 
 let next = 0;
+console.log("dfdfdfdf1111111");
 
 function hideBackgroundSlides() {
     for(var i = 0; i < slidersBackground.length; i++) {
@@ -27,4 +28,5 @@ setTimeout(() => {
 
 setTimeout(() => {
     sliderBackground.classList.remove("bgStart")
+    console.log("222222");
 }, 8000);
