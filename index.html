@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <div id="main" class="main">
         <ul id="backgroundShow" class="background-show bgStart">
             <li class="bg-main bg1"></li>
             <li class="bg-main bg2"></li>
@@ -50,68 +50,32 @@
             <h2 class="main-subtitle">Zakopane</h2>
             <a class="btn" href="#about">Więcej</a>
         </div>
-        <!-- <div id="slider">
-            <div class="slide">
-                <img src="./img/apartament/foto1.jpg" alt="" />
-            </div>
-            <div class="slide">
-                <img src="./img/apartament/foto2.jpg" alt="" />
-            </div>
-            <div class="slide">
-                <img src="./img/apartament/foto3.jpg" alt="" />
-            </div>
-        </div> -->
     </section>
 
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title"><strong class="stone sCenter">Więcej</strong></h2>
+            <h2 class="section-title"><i class="fas fa-info-circle"></i>
+                <strong>Więcej</strong>
+            </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquam ratione temporibus culpa libero
                 nisi possimus quas, rerum, suscipit corporis assumenda illo voluptas itaque molestiae cum molestias non
                 minima magni laudantium a consequuntur repellat? Suscipit ab vero accusamus ipsam iure!</p>
         </div>
     </section>
 
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title"><strong class="stone sRight">Zajrzyj również</strong></h2>
-            <div class="features-wrapper">
-                <article class="feature">
-                    <a href="#myFoto"><i class="fas fa-images"></i>
-                        <h3 class="feature-title"><strong class="stone sLeft">Album foto</strong></h3>
-                    </a>
-                    <p class="feature-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolore rem magnam quos
-                        voluptatibus, eius dolores dolorum commodi optio molestiae animi quis repellat ullam
-                        consequuntur voluptate, harum unde ipsum facilis!</p>
-                </article>
-                <article class="feature">
-                    <a href="#myVideo"><i class="fas fa-film"></i>
-                        <h3 class="feature-title"><strong class="stone sCenter">Album video</strong></h3>
-                    </a>
-                    <p class="feature-description">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nisi laborum modi magni
-                        deserunt nostrum, voluptatem vel ullam, aperiam aliquam quidem magnam neque odit distinctio
-                        perferendis soluta expedita recusandae debitis.</p>
-                </article>
-                <article class="feature">
-                    <a href="#location"><i class="fas fa-map-marker-alt"></i>
-                        <h3 class="feature-title"><strong class="stone sRight">Lokalizacja</strong></h3>
-                    </a>
-                    <p class="feature-description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fuga, non aliquid ad ratione
-                        nobis eligendi iure, iusto distinctio sunt magnam praesentium dicta inventore impedit, provident
-                        molestiae modi rem nesciunt!</p>
-                </article>
-            </div>
-        </div>
-    </section>
 
     <section id="myFoto" class="myFoto statement">
         <div class="container">
-            <strong class="section-title">Album </strong>
-            <strong class="section-title"> foto</strong>
+            <h2 class="section-title"><i class="fas fa-images"></i>
+                <strong>Album foto</strong>
+            </h2>
+            <!-- <strong class="section-title"> foto</strong> -->
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolore rem magnam quos
+                voluptatibus, eius dolores dolorum commodi optio molestiae animi quis repellat ullam
+                consequuntur voluptate, harum unde ipsum facilis!</p>
         </div>
+
         <!-- <div class="okno"> -->
         <div class="album-foto">
             <ul class="slides-foto">
@@ -145,8 +109,14 @@
 
     <section id="myVideo" class="statement">
         <div class="container">
-            <strong class="section-title">Album </strong>
-            <strong class="section-title"> video</strong>
+            <h2 class="section-title">
+                <i class="fas fa-film"></i>
+                <strong class="section-title">Album video</strong>
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nisi laborum modi magni
+                deserunt nostrum, voluptatem vel ullam, aperiam aliquam quidem magnam neque odit distinctio
+                perferendis soluta expedita recusandae debitis.</p>
         </div>
         <div class="video">
             <div class="blockFilm">
@@ -164,15 +134,28 @@
 
     <section id="location" class="location">
         <div class="container">
-            <strong class="section-title">Lokalizacja</strong>
+            <h2 class="section-title">
+                <i class="fas fa-map-marker-alt"></i>
+                <strong class="section-title">Lokalizacja</strong>
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nisi laborum modi magni
+                deserunt nostrum, voluptatem vel ullam, aperiam aliquam quidem magnam neque odit distinctio
+                perferendis soluta expedita recusandae debitis.</p>
         </div>
-        <div class="container boxes">
+        <div class="container">
             <div class="box">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20811.988200711236!2d19.9317127!3d49.304842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715f2eb9362c89d%3A0xc3a800f98c184c63!2sTytusa%20Cha%C5%82ubi%C5%84skiego%2013%2C%2034-500%20Zakopane!5e0!3m2!1spl!2spl!4v1641243891982!5m2!1spl!2spl"
                     width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
             <div class="box">
+                <h2 class="section-title"><i class="fas fa-map-marked-alt"></i>
+                    <strong class="section-title">Kontakt</strong>
+                </h2>
                 <h6>Tytusa Chałubińskiego 13a</h6>
                 <h6>34-500 Zakopane</h6>
                 <h6 class="space">apartament.chalbinskiego</h6>
@@ -184,7 +167,8 @@
 
     <section id="contactForm" class="contactForm">
         <div class="container">
-            <h2 class="from-title">Formularz kontaktowy</h2>
+            <h2 class="from-title"><i class="fas fa-envelope"></i>
+                Formularz kontaktowy</h2>
             <div id="sendFormStatus"></div>
             <form method="post" id="contactForm">
                 <div><label for="name">Imię i nazwisko</label></div>
@@ -202,11 +186,11 @@
 
     <footer id="footer" class="footer-section">
         <!-- <div class="container"> -->
-            <div class="footer-text">
-                <a href="http://robertburek.pl" target="_blank" rel="noopener noreferrer">
-                    <p>&copy; 2022 Robert Burek</p>
-                </a>
-            </div>
+        <div class="footer-text">
+            <a href="http://robertburek.pl" target="_blank" rel="noopener noreferrer">
+                <p>&copy; 2022 Robert Burek</p>
+            </a>
+        </div>
         <!-- </div> -->
     </footer>
 
