@@ -393,21 +393,22 @@ iframe div.place-card.place-card-large {
 }
 
 @media (max-width: 750px) {
-    .features-wrapper {
+    /* .features-wrapper {
         display: block;
     }
     .feature {
         flex: 0 0 100%;
         max-width:100%;
         margin-bottom: 20px;
-    }
+    } */
     .video img,
     video {
         height: 200px;
     }
   
-    .statement strong, 
-    .location strong {
+    /* .statement strong,  */
+    /* .location  */
+    strong {
         font-size: 1.0em;
     }
     .box {
@@ -445,9 +446,9 @@ iframe div.place-card.place-card-large {
     .myFoto {
         height: 630px;
     }
-    .strong {
+    /* .strong {
         font-size: 1.0em;
-    }
+    } */
     .container {
         max-width: 100%;
         padding: 0;
@@ -463,10 +464,10 @@ iframe div.place-card.place-card-large {
     .splash {
         flex-direction: column;
     }
-    #slider {
+    /* #slider {
         margin: 45px auto;
         margin-top: 70px;
-    }
+    } */
     .page-intro {
         margin-left: 0;
         margin-right: 0;
