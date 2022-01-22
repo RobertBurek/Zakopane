@@ -1,7 +1,6 @@
 $width-img-slides: 300px;
 $height-img-slides: 300px;
 $width-img-thumbnails: 80px;
-// $height-img-thumbnails : 120px;
 $quantity-thumbnails: 5;
 $padding-top-album-foto: 40vh;
 
@@ -11,13 +10,9 @@ ul {
 }
 
 .album-foto {
-	// margin: 100px auto;
-	// -webkit-box-sizing: inherit;
-	// box-sizing: inherit;
 	padding: 0;
 	display: flex;
-	justify-content: center; //???
-
+	justify-content: center; 
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -30,28 +25,23 @@ ul {
 .thumbnails {
 	display: flex;
 	flex-direction: column;
-	// line-height: 0;
 	padding-top: $padding-top-album-foto;
 
 	li {
 		flex: auto;
-		// display: block; //???
 		height: $height-img-slides / $quantity-thumbnails;
 	}
 
 	a {
 		display: block;
-		cursor: pointer; //???
+		cursor: pointer;
 		height: $height-img-slides / $quantity-thumbnails;
 	}
 
 	img {
 		width: $width-img-thumbnails;
 		height: $height-img-slides / $quantity-thumbnails;
-		// object-fit: cover;
 		object-position: top;
-		// border-top: 3px solid #fff;
-		// border-bottom: 3px solid #fff;
 		border: 3px solid #fff;
 	}
 }
@@ -59,7 +49,6 @@ ul {
 .slides-foto {
 	overflow: hidden;
 	width: $width-img-slides;
-	// height: 100vmin;
 
 	li {
 		position: absolute;
@@ -69,9 +58,7 @@ ul {
 	img {
 		height: $height-img-slides;
 		width: $width-img-slides;
-		// object-fit: cover;
 		object-position: top;
-		// rotate: 180deg;
 		border-left: 3px solid #fff;
 		border-top: 3px solid #fff;
 		border-bottom: 3px solid #fff;
