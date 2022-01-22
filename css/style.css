@@ -64,10 +64,6 @@ body, html {
     align-items: flex-start;
 }
 
-/* .features{
-    background-color: #ffffff;
-} */
-
 .background-show {
 	list-style: none;
 	width: 100%;
@@ -110,8 +106,6 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* align-items: flex-start; */
-    /* padding: 0 30px; */
     height: 100vh;
 }
 
@@ -143,7 +137,6 @@ section {
 }
 
 .section-title {
-    /* position: relative; */
     margin: 0 0 40px 0;
     text-align: center;
 }
@@ -164,7 +157,6 @@ a {
 }
 
 .statement i, .statement p {
-    /* font-weight: 700; */
     color: #ffffe6;
 }
 
@@ -225,7 +217,6 @@ strong {
     color: #474550;
     font-size: 2.5vw;
     padding: 10px;
-    /* width: 50%; */
 }
 
 iframe {
@@ -276,7 +267,6 @@ textarea.formField {
     width: 45vw; 
     height: 10vh;
 }
-/* #sendBtn,  */
 .btn {
     cursor: pointer;
     background: linear-gradient(#5e5c5c 0, #c8c4c4 100%);
@@ -289,7 +279,6 @@ textarea.formField {
     color: #fff;
     letter-spacing: 0.2em;
 }
-/* #sendBtn:hover,  */
 .btn:hover {
     color: #474550;
     background: linear-gradient(#888585 0, #ece9e9 100%);
@@ -299,20 +288,6 @@ a.btn {
     width: 108px;
     margin: 0 auto;
 }
-/* .btn {
-    padding: 18px 24px 18px 24px;
-    font-size: 14px;
-    background-color: #949b9b;
-    color: #ffffff;
-    border-radius: 30px 50% 25px;
-} */
-
-/* .btn:hover {
-    background-color: darken(#7c7a85, 3%);
-    color: #474550;
-    border-radius: 60% 40px;
-} */
-
 #send_form_status {
     border: 1px dashed #ccc;
     display: none; 
@@ -373,21 +348,15 @@ iframe div.place-card.place-card-large {
 
 .contactForm {
     position: relative; 
-    /* height: 100vh; */
-    /* width: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-image: url('../img/apartament/foto9.jpg'); */
     background-size: cover;
     z-index: -1;
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
-    /* background-color: #fff; */
     background-image: url('../img/apartament/foto2-bg-hor.jpg');
-    /* background-color: rgba(75, 72, 72, .5); */
 }
 .contactForm::before {
     content: "";
@@ -397,12 +366,8 @@ iframe div.place-card.place-card-large {
     bottom: 0px;
     left: 0px;
     z-index: -1;
-    /* background-color: rgba(0,0,0,0.25); */
     background-color: rgba(72, 72, 72, 0.7);
-
 }
-
-
 
 
 /* ------------------RESPONZYWNOŚĆ-------------------- */
@@ -419,24 +384,12 @@ iframe div.place-card.place-card-large {
         height: 400px;
     }
     .blockFilm {
-        /* flex: ; */
-        /* max-width: 50%; */
         max-width: 100%;
         padding-bottom: 50px;
     }
     iframe {
         height: 200px;
     }
-    /* .main-title {
-        font-size: 35px;
-    } */
-    /* .page-intro {
-        width: 250px;
-        margin-right: 6vw;
-    } */
-    /* .slide > img {
-        height: 55vh;
-    } */
 }
 
 @media (max-width: 750px) {
@@ -457,9 +410,6 @@ iframe div.place-card.place-card-large {
     .location strong {
         font-size: 1.0em;
     }
-    /* .container {
-        max-width: 90%;
-    } */
     .box {
         font-size: 3.5vw;
         padding-left: 0;
@@ -492,10 +442,6 @@ iframe div.place-card.place-card-large {
         padding-bottom: 20px;
         padding-top: 20px;
     }
-    /* .container {
-        padding: 0 20px;
-        padding-bottom: 20px;
-    } */
     .myFoto {
         height: 630px;
     }
@@ -506,12 +452,6 @@ iframe div.place-card.place-card-large {
         max-width: 100%;
         padding: 0;
     }
-    /* .location .container {
-        max-width: 100%;
-    } */
-/* } */
-
-/* @media (max-width: 500px) { */
     .video {
         display: block;
     }
@@ -537,7 +477,6 @@ iframe div.place-card.place-card-large {
         height: 40vh;
     }
     .splash > div {
-        /* margin-top: 4vh; */
     }
     .formField {
         padding: 0;
@@ -575,11 +514,6 @@ iframe div.place-card.place-card-large {
         font-size: 25px;
         margin-right: 10px;
     }
-    /* .location.container {
-        max-width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-    } */
 }
 
 @media (max-width: 400px) {
@@ -609,7 +543,6 @@ iframe div.place-card.place-card-large {
         height: 30vh;
     }
     .splash > div {
-        /* margin-top: 2vh; */
     }
     .page-intro {
         width: 166px;
@@ -654,7 +587,6 @@ iframe div.place-card.place-card-large {
 
 @media (max-height: 350px) {
     .splash > div {
-        /* margin-top: 12vh; */
     }
     .main-title {
         font-size: 25px;
