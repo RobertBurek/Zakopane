@@ -518,7 +518,6 @@ iframe div.place-card.place-card-large {
 }
 
 @media (max-width: 400px) {
-    .statement p, 
     .statement strong, 
     #location strong {
         font-size: 1.2rem;
@@ -527,8 +526,7 @@ iframe div.place-card.place-card-large {
     .section-title {
         font-size: 12px;
     }
-    .feature-description,
-    .about p {
+    p {
         font-size: 10px;
     }
     .video img {
@@ -553,6 +551,9 @@ iframe div.place-card.place-card-large {
     }
     .main-subtitle {
         font-size: 15px;
+    }
+    .myFoto {
+        height: 500px;
     }
 }
 

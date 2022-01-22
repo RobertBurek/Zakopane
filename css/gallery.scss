@@ -1,6 +1,6 @@
-$width-img-slides: 300px;
-$height-img-slides: 300px;
-$width-img-thumbnails: 80px;
+$width-img-slides: 260px;
+$height-img-slides: 260px;
+$width-img-thumbnails: 60px;
 $quantity-thumbnails: 5;
 $padding-top-album-foto: 40vh;
 
@@ -109,5 +109,14 @@ ul {
 	}
 	.thumbnails {
 		padding-top: $padding-top-album-foto * 2;
+	}
+}
+
+@media (max-width: 400px) {
+	.slides-foto li {
+		padding-top: $padding-top-album-foto - 18;
+	}
+	.thumbnails {
+		padding-top: $padding-top-album-foto - 18;
 	}
 }
