@@ -1,6 +1,33 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body {
+  margin: 0;
+  background-color: #868383;
+}
+
+.cos {
+  height: 80%;
+  width: 80%;
+  margin: 200px auto;
+  border: 3px solid red;
+}
+
 .mySlider {
-  height: 550px;
-  width: 364px;
+  height: 470px;
+  width: 680px;
   margin: 50px auto;
 }
 
@@ -15,17 +42,14 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
 }
 
 .slides-foto-ver li,
 .slides-foto-hor li {
-  padding-top: 290px;
+  padding-top: 70px;
 }
 
 .thumbnails {
@@ -36,25 +60,25 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 290px;
+  padding-top: 70px;
 }
 
 .thumbnails li {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
-  height: 52px;
+  height: 80px;
 }
 
 .thumbnails a {
   display: block;
   cursor: pointer;
-  height: 52px;
+  height: 80px;
 }
 
 .thumbnails img {
-  width: 52px;
-  height: 52px;
+  width: 80px;
+  height: 80px;
   -o-object-position: top;
      object-position: top;
   border: 3px solid #fff;
@@ -63,7 +87,7 @@ ul {
 .slides-foto-ver,
 .slides-foto-hor {
   overflow: hidden;
-  width: 260px;
+  width: 600px;
 }
 
 .slides-foto-ver li,
@@ -74,13 +98,11 @@ ul {
 
 .slides-foto-ver img,
 .slides-foto-hor img {
-  height: 260px;
-  width: 260px;
+  height: 400px;
+  width: 600px;
   -o-object-position: top;
      object-position: top;
-  border-left: 3px solid #fff;
-  border-top: 3px solid #fff;
-  border-bottom: 3px solid #fff;
+  border: 3px solid #fff;
 }
 
 .slides-foto-ver li:target {
@@ -163,35 +185,5 @@ ul {
   }
 }
 
-@media (max-height: 550px) {
-  .slides-foto-ver li,
-  .slides-foto-hor li {
-    padding-top: 300px;
-  }
-  .thumbnails {
-    padding-top: 300px;
-  }
-}
-
-@media (max-height: 350px) {
-  .slides-foto-ver li,
-  .slides-foto-hor li {
-    margin-top: 65vh;
-    padding-top: 30px;
-  }
-  .thumbnails {
-    margin-top: 65vh;
-    padding-top: 30px;
-  }
-}
-
-@media (max-width: 400px) {
-  .slides-foto-ver li,
-  .slides-foto-hor li {
-    padding-top: 30vh;
-  }
-  .thumbnails {
-    padding-top: 30vh;
-  }
-}
-/*# sourceMappingURL=gallery.css.map */
+/* ------------------RESPONZYWNOŚĆ-------------------- */
+/*# sourceMappingURL=mySlider copy.css.map */
