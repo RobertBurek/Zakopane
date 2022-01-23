@@ -135,19 +135,21 @@ ul {
 
 @media (max-height: 350px) {
   .slides-foto li {
-    padding-top: 94vh;
+    margin-top: 65vh;
+    padding-top: 30px;
   }
   .thumbnails {
-    padding-top: 94vh;
+    margin-top: 65vh;
+    padding-top: 30px;
   }
 }
 
 @media (max-width: 400px) {
   .slides-foto li {
-    padding-top: 29vh;
+    padding-top: 30vh;
   }
   .thumbnails {
-    padding-top: 29vh;
+    padding-top: 30vh;
   }
 }
 /*# sourceMappingURL=gallery.css.map */
