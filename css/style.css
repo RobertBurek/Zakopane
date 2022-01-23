@@ -21,6 +21,10 @@ body, html {
     height: 100%;
 }
 
+.bgStart {
+    background-image: url('../img/apartament/foto9-bw-bg-hor.jpg');
+}
+
 .bg-main {
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,9 +55,6 @@ body, html {
 }
 .bg8 {
     background-image: url('../img/apartament/foto3-bg-hor.jpg');
-}
-.bgStart {
-    background-image: url('../img/apartament/foto9-bg-hor.jpg');
 }
 
 .main{
@@ -111,16 +112,18 @@ body, html {
 
 
 .page-intro {
-    width: 70vh;
+    width: 75vh;
     text-align: center;
     height: 60vh;
 }
 
 .main-title {
-    font-size: 10vh;
+    font-size: 12vh;
     font-weight: 700;
     letter-spacing: 5px;
     word-spacing: 10px;
+    /* text-shadow: #c8c4c4 5px 3px; */
+    text-shadow: #fff 4px 3px;
 }
 
 .main-subtitle {
@@ -128,7 +131,10 @@ body, html {
     font-weight: 700;
     letter-spacing: 2px;
     word-spacing: 0px;
-    font-size: 6vh;
+    font-size: 7vh;
+    word-spacing: 10px;
+    /* text-shadow: #c8c4c4 5px 3px; */
+    text-shadow: #fff 3px 2px;
 }
 
 section {
@@ -472,7 +478,8 @@ iframe div.place-card.place-card-large {
         margin-left: 0;
         margin-right: 0;
         margin: 0 auto;
-        margin-top: 0px;
+        margin-top: 22vh;
+        width: 35vh;
     }
     .slide > img {
         height: 40vh;
@@ -485,9 +492,6 @@ iframe div.place-card.place-card-large {
     }
     textarea.formField {
         width: 90%;
-    }
-    .page-intro {
-        width: 35vh;
     }
     .main-subtitle {
         margin: 4vh 0 12vh;
@@ -535,22 +539,19 @@ iframe div.place-card.place-card-large {
     video {
         height: 180px;
     }
-    #slider {
-        margin: 75px auto;
-    }
     .slide > img {
         height: 30vh;
     }
     .splash > div {
     }
     .page-intro {
-        width: 166px;
+        width: 225px;
     }
     .main-title {
-        font-size: 20px;
+        font-size: 30px;
     }
     .main-subtitle {
-        font-size: 15px;
+        font-size: 20px;
     }
     .myFoto {
         height: 500px;
@@ -583,7 +584,7 @@ iframe div.place-card.place-card-large {
         background-image: url('../img/apartament/foto3.jpg');
     }
     .bgStart {
-        background-image: url('../img/apartament/foto9.jpg');
+        background-image: url('../img/apartament/foto9-bw.jpg');
     }
 }
 
@@ -591,7 +592,7 @@ iframe div.place-card.place-card-large {
     .splash > div {
     }
     .main-title {
-        font-size: 25px;
+        font-size: 30px;
     }
     .main-subtitle {
         font-size: 20px;
