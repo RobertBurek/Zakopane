@@ -519,6 +519,9 @@ iframe div.place-card.place-card-large {
         font-size: 25px;
         margin-right: 10px;
     }
+    .myFoto {
+        height: 630px;
+    }
 }
 
 @media (max-width: 400px) {

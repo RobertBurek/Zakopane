@@ -18,7 +18,7 @@ ul {
 }
 
 .slides-foto li {
-  padding-top: 40vh;
+  padding-top: 47vh;
 }
 
 .thumbnails {
@@ -29,7 +29,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 40vh;
+  padding-top: 47vh;
 }
 
 .thumbnails li {
@@ -126,28 +126,28 @@ ul {
 
 @media (max-height: 550px) {
   .slides-foto li {
-    padding-top: 50vh;
+    padding-top: 57vh;
   }
   .thumbnails {
-    padding-top: 50vh;
+    padding-top: 57vh;
   }
 }
 
 @media (max-height: 350px) {
   .slides-foto li {
-    padding-top: 80vh;
+    padding-top: 94vh;
   }
   .thumbnails {
-    padding-top: 80vh;
+    padding-top: 94vh;
   }
 }
 
 @media (max-width: 400px) {
   .slides-foto li {
-    padding-top: 22vh;
+    padding-top: 29vh;
   }
   .thumbnails {
-    padding-top: 22vh;
+    padding-top: 29vh;
   }
 }
 /*# sourceMappingURL=gallery.css.map */
