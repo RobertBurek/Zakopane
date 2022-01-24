@@ -1,7 +1,8 @@
 // let thumbnailsElements = document.getElementsByClassName("slides-foto");
 let slidesFoto = document.getElementById("slidesFoto");
-if (mySlider[0] === "verticalRotate") slidesFoto.classList.add("slides-foto-ver");
-if (mySlider[0] === "horizontalRotate") slidesFoto.classList.add("slides-foto-hor");
+// if (mySlider[0] === "verticalRotate") slidesFoto.classList.add("slides-foto-ver");
+// if (mySlider[0] === "horizontalRotate") slidesFoto.classList.add("slides-foto-hor");
+slidesFoto.classList.add("slides-foto-rotate");
 // else {slidesFoto.classList.add("slides-foto-ver");}
 
 let thumbnailsElements = document.querySelectorAll("#slidesFoto>li>img");

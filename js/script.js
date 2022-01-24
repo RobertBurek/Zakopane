@@ -1,13 +1,10 @@
-$(document).ready(function() {
-    $("html").on("submit","#contact_form",function(e){
-      e.preventDefault();
-      $("#send_form_status").html('').hide();
-      var data=$("#contact_form").serialize();
-      $.post("/send_form.php",data,function(res){
-        $("#send_form_status").html(res.msg).show();
-        if(res.status==1){ 
-          $("#contact_form")[0].reset();
-        } 
-      });
-    });
-  });
+let currentHeight = document.body.offsetHeight;
+
+function altitudeChanged() {
+  if (document.body.offsetHeight != currentHeight) {
+    currentHeight = document.body.offsetHeight;
+    console.log(currentHeight);
+    // location.reload(true);
+  }
+  setTimeout("altitudeChanged()",1000);
+};

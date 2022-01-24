@@ -9,7 +9,7 @@
     <meta name="keywords" content="Zakopane, apartament, hotel, wynajm, wypoczynek, zima">
     <title>Apartament jak hotel</title>
     <script>document.write('<link rel="stylesheet" href="./css/style.css?dev=' + Math.floor(Math.random() * 100) + '"\>');</script>
-    <script>document.write('<link rel="stylesheet" href="./css/gallery.css?dev=' + Math.floor(Math.random() * 100) + '"\>');</script>
+    <script>document.write('<link rel="stylesheet" href="./css/mySlider.css?dev=' + Math.floor(Math.random() * 100) + '"\>');</script>
     <script src="https://kit.fontawesome.com/1085229b76.js" crossorigin="anonymous"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="https://static.rmt.pl/cache.ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -27,14 +27,11 @@
                 });
             });
         });
-    </script>
-    <script>
-        // let mySliderSiteThumbnail = "right";
         let mySlider = ["verticalRotate", 2];
     </script>
 </head>
 
-<body>
+<body onload="altitudeChanged()">
     <div id="main" class="main">
         <ul id="backgroundShow" class="background-show bgStart">
             <li class="bg-main bg1"></li>
@@ -81,9 +78,9 @@
         </div>
 
         <!-- <div class="okno"> -->
-        <!-- <div class="mySlider"> -->
+        <div class="mySlider">
             <div class="album-foto">
-                <div id="thumbnailsBefore">
+                <div id="thumbnailsBefore" class="thumbnailsBefore">
                     <ul class="thumbnails">
                         <!-- <li><a href="#foto1"><img src="./img/apartament/foto2.jpg"/></a></li>
                 <li><a href="#foto2"><img src="./img/apartament/foto1.jpg"/></a></li>
@@ -110,7 +107,7 @@
                             alt="Aneks kuchenny, okrągły, śniadaniowy stolik z trzema krzesłami" /></li>
                     <li id="foto10"><img src="./img/apartament/foto10.jpg" alt="Salon, widok z przedsionka" /></li>
                 </ul>
-                <div id="thumbnailsAfter">
+                <div id="thumbnailsAfter" class="thumbnailsAfter">
                     <ul class="thumbnails">
                         <!-- <li><a href="#foto6"><img src="./img/apartament/foto6.jpg"/></a></li>
                 <li><a href="#foto7"><img src="./img/apartament/foto7.jpg"/></a></li>
@@ -120,7 +117,7 @@
                     </ul>
                 </div>
             </div>
-        <!-- </div> -->
+        </div>
 
         <!-- </div> -->
     </section>
@@ -212,13 +209,13 @@
         <!-- </div> -->
     </footer>
 
-    <!-- <script>document.write('<script src="./js/slider.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script> -->
     <script>document.write('<script src="./js/bgSlider.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script>
     <script>document.write('<script src="./js/mySlider.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script>
+    <script>document.write('<script src="./js/script.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script>
 
-    <!-- <script>document.write('<script src="/Zakopane/js/slider.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script> -->
     <!-- <script>document.write('<script src="/Zakopane/js/bgSlider.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script> -->
     <!-- <script>document.write('<script src="/Zakopane/js/mySlider.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script> -->
+    <!-- <script>document.write('<script src="/Zakopane/js/script.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script> -->
 </body>
 
 </html>
