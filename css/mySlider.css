@@ -26,8 +26,8 @@ body {
 }
 
 .mySlider {
-  height: 470px;
-  width: 760px;
+  height: 410px;
+  width: 560px;
   margin: 50px auto;
 }
 
@@ -49,7 +49,7 @@ ul {
 }
 
 .slides-foto-rotate li {
-  padding-top: 70px;
+  padding-top: 10px;
 }
 
 .thumbnails {
@@ -60,7 +60,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 70px;
+  padding-top: 10px;
 }
 
 .thumbnails li {
@@ -87,18 +87,18 @@ ul {
 
 .slides-foto-rotate {
   overflow: hidden;
-  width: 600px;
+  width: 400px;
 }
 
 .slides-foto-rotate li {
   position: absolute;
   z-index: 1;
-  padding-top: 70px;
+  padding-top: 10px;
 }
 
 .slides-foto-rotate img {
   height: 400px;
-  width: 600px;
+  width: 400px;
   -o-object-position: top;
      object-position: top;
   border: 3px solid #fff;
@@ -160,10 +160,10 @@ ul {
   .mySlider {
     height: 420px;
     width: 300px;
-    margin: 150px auto;
+    margin: 20px auto;
   }
   .album-foto {
-    margin-top: 150px;
+    margin-top: 20px;
   }
   .thumbnails {
     -webkit-box-orient: horizontal;
@@ -187,11 +187,11 @@ ul {
   }
   .thumbnailsBefore {
     position: relative;
-    top: 150px;
+    top: 20px;
     z-index: 4;
   }
   .thumbnailsAfter {
-    padding-top: 150px;
+    padding-top: 20px;
   }
   .slides-foto-rotate {
     width: 300px;
@@ -199,7 +199,11 @@ ul {
     padding-top: 0;
   }
   .slides-foto-rotate li {
-    padding-top: 150px;
+    padding-top: 20px;
+  }
+  .slides-foto-rotate img {
+    height: 300px;
+    width: 300px;
   }
 }
 
