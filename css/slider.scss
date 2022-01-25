@@ -11,6 +11,10 @@
     padding: 0;
   }
 
+  :root {
+    --quantityThumbnails: rgb(189, 23, 23);
+  }
+
   .okno {
     box-sizing: border-box;
     height: 50%;
@@ -24,6 +28,7 @@
     // box-sizing: inherit;
     // box-sizing: border-box;
     // height: 80%;
+    background-color: var(--quantityThumbnails);
   }
   
   .thumbnails {
@@ -51,6 +56,7 @@
     overflow: hidden;
     width: 75vmin;
     height: 100vmin;
+    color: var(--quantityThumbnails);
     
     li {
       width: 75vmin;

@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+:root {
+  --quantityThumbnails: rgb(189, 23, 23);
+}
+
 .okno {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -22,6 +26,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: var(--quantityThumbnails);
 }
 
 .thumbnails {
@@ -58,6 +63,7 @@
   overflow: hidden;
   width: 75vmin;
   height: 100vmin;
+  color: var(--quantityThumbnails);
 }
 
 .slides-foto li {
