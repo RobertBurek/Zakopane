@@ -129,4 +129,18 @@
     z-index: 2;
   }
 }
+
+.demo {
+  --hue: 40;
+  --color: hsl(var(--hue), 90%, 50%);
+  --shadow: hsl(var(--hue), 90%, 20%);
+  border: 10px solid var(--color);
+}
+
+.demo .element {
+  background: var(--color);
+  color: var(--color);
+  -webkit-box-shadow: 0 0 430px 130px var(--color);
+          box-shadow: 0 0 430px 130px var(--color);
+}
 /*# sourceMappingURL=slider.css.map */

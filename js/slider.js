@@ -21,3 +21,17 @@ hideSlides();
 slides[visible].style.display = "block";
 
 setInterval(switchSlide, 1000);
+
+
+
+
+const demo = document.querySelector(".demo");
+const el = demo.querySelector(".element");
+const input = demo.querySelector("input");
+
+//domyślną wartość pobieram z pliku css
+input.value = getComputedStyle(demo).getPropertyValue("--hue");
+
+input.addEventListener("input", e => {
+    demo.style.setProperty(`--hue`, input.value);
+})

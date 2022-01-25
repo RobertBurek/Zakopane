@@ -1,13 +1,40 @@
-$width-img-slides: 100vw;
-$height-img-slides: 400px;
+body {
+	margin: 0;
+	background-color: #868383;
+  // --heightMySlider: 300px;
+  // --widthMySlider: 400px;
+  // --heightImgThumbnails: 80px;
+  // --widthImgThumbnails: 80px;
+}
+
+:root {
+  --widthMySlider: 400px;
+  --heightMySlider: 300px;
+  --heightImgThumbnails: 80px;
+  --widthImgThumbnails: 80px;
+  --widthImgSlides: 400px;
+  --heightImgSlides: 300px;
+}
+
+// $width-img-slides: var(--widthMySlider);
+// $height-img-slides: var(--heightMySlider);
 // $width-img-thumbnails : 80px;
 // $height-img-thumbnails : 120px;
 $quantity-thumbnails: 5;
-$width-img-thumbnails: $height-img-slides / $quantity-thumbnails;
+// $width-img-thumbnails: $height-img-slides / $quantity-thumbnails;
+// $height-img-thumbnails: $height-img-slides / $quantity-thumbnails;
+// $width-img-thumbnails: var(--widthImgThumbnails);
+// $height-img-thumbnails: var(--heightImgThumbnails);
 // $width-img-slides : 600 + $width-img-thumbnails;
 // $frfr : 100vh;
 // $padding-top-album-foto : ($frfr - $height-img-slides) / 2;
 $padding-top-album-foto: 10px;
+
+// :root {
+//   --quantityThumbnails: rgb(189, 23, 23);
+//   --heightScreen: 300px;
+//   --widthScreen: 400px;
+// }
 
 *,
 *::before,
@@ -21,11 +48,14 @@ $padding-top-album-foto: 10px;
 	box-shadow: none;
 }
 
-body {
-	margin: 0;
-	background-color: #868383;
-	// z-index: 0;
-}
+// body {
+// 	margin: 0;
+// 	background-color: #868383;
+// 	// z-index: 0;
+//   // --quantityThumbnails: rgb(189, 23, 23);
+//   --heightScreen: 300px;
+//   --widthScreen: 400px;
+// }
 
 .cos {
 	height: 500px;
@@ -35,8 +65,10 @@ body {
 }
 
 .mySlider {
-	height: $height-img-slides + $padding-top-album-foto;
-	width: $width-img-slides + $width-img-thumbnails * 2;
+	// height: $height-img-slides + $padding-top-album-foto;
+	// width: $width-img-slides + $width-img-thumbnails * 2;
+	height: var(--heightMySlider);
+	width: var(--widthMySlider);
 	margin: 50px auto;
 	// background-color: rgb(139, 134, 134);
 	// z-index: 0;
@@ -62,32 +94,39 @@ ul {
 }
 
 // .slides-foto-ver li,
-.slides-foto-rotate li {
-	padding-top: $padding-top-album-foto;
-}
+// .slides-foto-rotate li {
+// 	padding-top: $padding-top-album-foto;
+// }
 
 .thumbnails {
 	display: flex;
 	flex-direction: column;
 	// line-height: 0;
 	padding-top: $padding-top-album-foto;
+  // --heightImgThumbnails: 80px;
+  // --widthImgThumbnails: 80px;
 
 	li {
 		flex: auto;
 		// display: block; //???
-		height: $height-img-slides / $quantity-thumbnails;
-		padding-top: $quantity-thumbnails;
+		// height: $height-img-thumbnails;
+		// padding-top: $quantity-thumbnails;
+		width: var(--widthImgThumbnails);
+		height: var(--heightImgThumbnails);
 	}
 
 	a {
 		display: block;
 		cursor: pointer; //???
-		height: $height-img-slides / $quantity-thumbnails;
+		// height: $height-img-thumbnails;
+		height: var(--heightImgThumbnails);
 	}
 
 	img {
-		width: $width-img-thumbnails;
-		height: $height-img-slides / $quantity-thumbnails;
+		// width: $width-img-thumbnails;
+		// height: $height-img-thumbnails;
+		width: var(--widthImgThumbnails);
+		height: var(--heightImgThumbnails);
 		// object-fit: cover;
 		object-position: top;
 		// border-top: 3px solid #fff;
@@ -99,19 +138,23 @@ ul {
 // .slides-foto-ver,
 .slides-foto-rotate {
 	overflow: hidden;
-	width: $width-img-slides;
+	// width: $width-img-slides;
+	width: var(--widthImgSlides);
 	// padding-top: $padding-top-album-foto;
 	// height: 100vmin;
 
 	li {
 		position: absolute;
 		z-index: 1;
-		padding-top: $padding-top-album-foto;
+		// padding-top: $padding-top-album-foto;
+		padding-top: var(--paddingTopLiSlides);
 	}
 
 	img {
-		height: $height-img-slides;
-		width: $width-img-slides;
+    	width: var(--widthImgSlides);
+    	height: var(--heightImgSlides);
+		// height: $height-img-slides;
+		// width: $width-img-slides;
 		// object-fit: cover;
 		object-position: top;
 		// rotate: 180deg;
@@ -247,6 +290,8 @@ ul {
 @media (orientation: landscape) {
 	.album-foto {
 		display: flex;
+		position: absolute;
+		top: var(--paddingTopLiSlides);
 	}
 }
 

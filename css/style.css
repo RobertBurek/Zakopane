@@ -192,8 +192,10 @@ strong {
 }
 
 .myFoto {
+    --heightMyFoto: 860px;
+    height: var(--heightMyFoto);
     position: relative;
-    height: 660px;
+    /* height: 660px; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -450,7 +452,9 @@ iframe div.place-card.place-card-large {
         padding-top: 20px;
     }
     .myFoto {
-        height: 630px;
+        /* height: 630px; */
+        --heightMyFoto: 630px;
+        height: var(--heightMyFoto);
     }
     /* .strong {
         font-size: 1.0em;
