@@ -125,6 +125,13 @@ body, html {
     color: black;
 }
 
+.main-title-shadow-animation {
+    animation: show-shadow-title 5s 1;
+}
+.main-title-shadow {
+    text-shadow: #ffffe6 4px 3px;
+}
+
 .main-subtitle {
     margin: 2vh 0 10vh;
     font-weight: 900;
@@ -132,6 +139,34 @@ body, html {
     word-spacing: 0px;
     font-size: 7vh;
     color: #ffffe6;
+}
+
+.main-subtitle-shadow-animation {
+    animation: show-shadow-subtitle 4s 1;
+}
+.main-subtitle-shadow {
+    text-shadow: black 3px 2px;
+}
+
+@keyframes show-shadow-title {
+	0% {
+	}
+    50%{
+        text-shadow: #ffffe6 0px 0px;
+    }
+	100% {
+        text-shadow: #ffffe6 4px 3px;
+	}
+}
+@keyframes show-shadow-subtitle {
+	0% {
+	}
+    50%{
+        text-shadow: black 0px 0px;
+    }
+	100% {
+        text-shadow: black 3px 2px;
+	}
 }
 
 section {
