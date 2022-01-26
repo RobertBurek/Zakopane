@@ -44,30 +44,30 @@ myFoto.style.setProperty(`--heightMyFoto`, `${heightMyFoto}px`);
 myFoto.style.setProperty(`--paddingTopLiSlides`, `${paddingTopLiSlides}px`);
 myFoto.style.setProperty(`--marginTopLiSlides`, `${marginTopLiSlides}px`);
 } else {
-// paddingTopSection = 0;
-// paddingBottomSection = 0;
-// root.style.setProperty(`--paddingTopSection`, `${paddingTopSection}px`);
-// root.style.setProperty(`--paddingBottomSection`, `${paddingBottomSection}px`);
-
-// widthMySlider = currentWidth;
-// heightMySlider = Math.floor(currentWidth * 10/16);
-// widthImgThumbnails = Math.floor(heightMySlider/5);
-// heightImgThumbnails = Math.floor(heightMySlider/5);
-// heightMySlider = heightImgThumbnails * 5;
-// widthImgSlides = currentWidth - widthImgThumbnails * 2;
-// heightImgSlides = heightMySlider;
-// paddingTopLiSlides = Math.floor((currentHeight-heightImgSlides)/2);
-// marginTopLiSlides = heightContainerMyFoto - paddingTopLiSlides;
-// heightMyFoto = heightMySlider + heightContainerMyFoto + paddingTopSection + paddingBottomSection +paddingTopLiSlides;
-// root.style.setProperty(`--heightMySlider`, `${heightMySlider}px`);
-// root.style.setProperty(`--widthMySlider`, `${widthMySlider}px`);
-// root.style.setProperty(`--widthImgThumbnails`, `${widthImgThumbnails}px`);
-// root.style.setProperty(`--heightImgThumbnails`, `${heightImgThumbnails}px`);
-// root.style.setProperty(`--widthImgSlides`, `${widthImgSlides}px`);
-// root.style.setProperty(`--heightImgSlides`, `${heightImgSlides}px`);
-// myFoto.style.setProperty(`--heightMyFoto`, `${heightMyFoto}px`);
-// myFoto.style.setProperty(`--paddingTopLiSlides`, `${paddingTopLiSlides}px`);
-// myFoto.style.setProperty(`--marginTopLiSlides`, `${marginTopLiSlides}px`);
+  paddingTopSection = 0; //
+  paddingBottomSection = 0; //
+  myFoto.style.setProperty(`--paddingTopSection`, `${paddingTopSection}px`); //
+  myFoto.style.setProperty(`--paddingBottomSection`, `${paddingBottomSection}px`); //
+  widthMySlider = currentWidth; //
+  heightMySlider = Math.floor(currentWidth * 10/16); //
+  widthImgThumbnails = Math.floor(widthMySlider/5); //
+  heightImgThumbnails = Math.floor(widthMySlider/5); //
+  widthMySlider = widthImgThumbnails * 5; //
+  widthImgSlides = widthMySlider; //
+  heightImgSlides = heightMySlider; //
+  paddingTopLiSlides = Math.floor((currentHeight-heightImgSlides)/2);
+  heightContainerMyFoto = document.querySelector("#myFoto .container").offsetHeight;
+  marginTopLiSlides = heightContainerMyFoto - paddingTopLiSlides;
+  heightMyFoto = heightMySlider + heightContainerMyFoto + paddingTopSection + paddingBottomSection +paddingTopLiSlides;
+  myFoto.style.setProperty(`--heightMySlider`, `${heightMySlider}px`);
+  myFoto.style.setProperty(`--widthMySlider`, `${widthMySlider}px`);
+  myFoto.style.setProperty(`--widthImgThumbnails`, `${widthImgThumbnails}px`);
+  myFoto.style.setProperty(`--heightImgThumbnails`, `${heightImgThumbnails}px`);
+  myFoto.style.setProperty(`--widthImgSlides`, `${widthImgSlides}px`);
+  myFoto.style.setProperty(`--heightImgSlides`, `${heightImgSlides}px`);
+  myFoto.style.setProperty(`--heightMyFoto`, `${heightMyFoto}px`);
+  myFoto.style.setProperty(`--paddingTopLiSlides`, `${paddingTopLiSlides}px`);
+  myFoto.style.setProperty(`--marginTopLiSlides`, `${marginTopLiSlides}px`);
 
 }
 
