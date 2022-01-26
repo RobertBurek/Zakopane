@@ -1,7 +1,7 @@
 let currentHeight = document.body.offsetHeight;
 let currentWidth = document.body.offsetWidth;
 const root = document.querySelector(":root");
-const heightContainerMyFoto = document.querySelector("#myFoto .container").offsetHeight;
+let heightContainerMyFoto = document.querySelector("#myFoto .container").offsetHeight;
 const thumbnailsBefore = document.getElementsByClassName("thumbnailsBefore");
 const myFoto = document.getElementById("myFoto");
 
@@ -51,8 +51,9 @@ function altitudeChanged() {
       var widthImgSlides = currentWidth - widthImgThumbnails * 2;
       var heightImgSlides = heightMySlider;
       let paddingTopLiSlides = Math.floor((currentHeight-heightImgSlides)/2);
-      let marginTopLiSlides = containerMyFoto.offsetHeight - paddingTopLiSlides;
-      var heightMyFoto = heightMySlider + containerMyFoto.offsetHeight + 150;
+      heightContainerMyFoto = document.querySelector("#myFoto .container").offsetHeight;
+      let marginTopLiSlides = heightContainerMyFoto - paddingTopLiSlides;
+      var heightMyFoto = heightMySlider + heightContainerMyFoto + 150;
       root.style.setProperty(`--heightMySlider`, heightMySlider + "px");
       root.style.setProperty(`--widthMySlider`, widthMySlider + "px");
       // console.log(thumbnailsBefore);
