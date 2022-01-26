@@ -37,6 +37,7 @@ body {
 .mySlider {
   height: var(--heightMySlider);
   width: var(--widthMySlider);
+  margin: 0px auto;
 }
 
 ul {

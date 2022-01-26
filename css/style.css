@@ -129,7 +129,7 @@ body, html {
     animation: show-shadow-title 5s 1;
 }
 .main-title-shadow {
-    text-shadow: #ffffe6 4px 3px;
+    text-shadow: #ffffe6 3px 2px;
 }
 
 .main-subtitle {
@@ -155,7 +155,7 @@ body, html {
         text-shadow: #ffffe6 0px 0px;
     }
 	100% {
-        text-shadow: #ffffe6 4px 3px;
+        text-shadow: #ffffe6 3px 2px;
 	}
 }
 @keyframes show-shadow-subtitle {

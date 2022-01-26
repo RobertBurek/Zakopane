@@ -86,7 +86,7 @@ function altitudeChanged() {
 
     // if ((currentWidth >= 100)&&(currentWidth <= 1000))
     if (currentHeight <= currentWidth)
-    {
+    { if ((currentWidth >= 100)&&(currentWidth <= 800)) {
       console.log(currentWidth + " - " + currentHeight);
       paddingTopSection = 40;
       paddingBottomSection = 40;
@@ -112,7 +112,7 @@ function altitudeChanged() {
       myFoto.style.setProperty(`--heightMyFoto`, `${heightMyFoto}px`);
       myFoto.style.setProperty(`--paddingTopLiSlides`, `${paddingTopLiSlides}px`);
       myFoto.style.setProperty(`--marginTopLiSlides`, `${marginTopLiSlides}px`);
-    } else {
+    }} else {
       paddingTopSection = 0; //
       paddingBottomSection = 0; //
       myFoto.style.setProperty(`--paddingTopSection`, `${paddingTopSection}px`); //
