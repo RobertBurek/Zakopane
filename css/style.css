@@ -22,7 +22,7 @@ body, html {
 }
 
 .bgStart {
-    background-image: url('../img/apartament/foto11-bw-bg-hor.jpg');
+    background-image: url('../img/apartament/foto11b-bw-bg-hor.jpg');
 }
 
 .bg-main {
@@ -119,22 +119,19 @@ body, html {
 
 .main-title {
     font-size: 12vh;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 5px;
     word-spacing: 10px;
-    /* text-shadow: #c8c4c4 5px 3px; */
-    text-shadow: #fff 4px 3px;
+    color: black;
 }
 
 .main-subtitle {
     margin: 2vh 0 10vh;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-weight: 900;
+    letter-spacing: 3px;
     word-spacing: 0px;
     font-size: 7vh;
-    word-spacing: 10px;
-    /* text-shadow: #c8c4c4 5px 3px; */
-    text-shadow: #fff 3px 2px;
+    color: #ffffe6;
 }
 
 section {
@@ -484,8 +481,8 @@ iframe div.place-card.place-card-large {
         margin-left: 0;
         margin-right: 0;
         margin: 0 auto;
-        margin-top: 22vh;
-        width: 35vh;
+        margin-top: 30vh;
+        width: 225px;
     }
     .slide > img {
         height: 40vh;
@@ -593,7 +590,7 @@ iframe div.place-card.place-card-large {
         background-image: url('../img/apartament/foto3.jpg');
     }
     .bgStart {
-        background-image: url('../img/apartament/foto11a-bw.jpg');
+        background-image: url('../img/apartament/foto11b-bw.jpg');
     }
 }
 

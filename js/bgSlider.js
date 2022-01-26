@@ -2,7 +2,7 @@ let sliderBackground = document.getElementById("backgroundShow")
 let slidersBackground = sliderBackground.getElementsByTagName("li");
 
 let next = 0;
-console.log("dfdfdfdf1111111");
+// console.log("dfdfdfdf1111111");
 
 function hideBackgroundSlides() {
     for(var i = 0; i < slidersBackground.length; i++) {
@@ -24,9 +24,9 @@ hideBackgroundSlides();
 setTimeout(() => {
     slidersBackground[next].style.opacity = "1";
     setInterval(switchBackgroundSlide, 3000);
-}, 6000);
+}, 2000);
 
 setTimeout(() => {
-    sliderBackground.classList.remove("bgStart")
-    console.log("222222");
-}, 8000);
+    sliderBackground.classList.remove("bgStart");
+    
+}, 5000);
