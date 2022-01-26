@@ -11,7 +11,7 @@ if($name && $email && $phone && $message){
  $message_body.="Adres email: $email\n";
  $message_body.="Numer telefonu: $phone\n\n";
  $message_body.=$message;
- if(mail("Apartament.chalbinskiego@gmail.com","ApartamentJakHotel - $name",$message_body,$headers)){
+ if(mail("Apartament.chalubinskiego@gmail.com","ApartamentJakHotel - $name",$message_body,$headers)){
  $json=array("status"=>1,"msg"=>"<p style='color: #060;font-size: 20px;font-weight: 700;'>Formularz został pomyślnie wysłany.</p>");
  }
  else{
