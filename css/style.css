@@ -482,8 +482,8 @@ iframe div.place-card.place-card-large {
         font-size: 15px;
     }
     section {
-        padding-bottom: 20px;
-        padding-top: 20px;
+        padding-top: var(--paddingTopSection);
+        padding-bottom: var(--paddingBottomSection);
     }
     .myFoto {
         /* height: 630px; */
@@ -513,11 +513,11 @@ iframe div.place-card.place-card-large {
         margin-top: 70px;
     } */
     .page-intro {
-        margin-left: 0;
-        margin-right: 0;
+        /* margin-left: 0; */
+        /* margin-right: 0; */
         margin: 0 auto;
-        margin-top: 30vh;
-        width: 225px;
+        margin-top: 230px;
+        width: 230px;
     }
     .slide > img {
         height: 40vh;

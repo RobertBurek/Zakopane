@@ -69,7 +69,7 @@ $padding-top-album-foto: 10px;
 	// width: $width-img-slides + $width-img-thumbnails * 2;
 	height: var(--heightMySlider);
 	width: var(--widthMySlider);
-	margin: 50px auto;
+	// margin: 50px auto;
 	// background-color: rgb(139, 134, 134);
 	// z-index: 0;
 }
@@ -241,9 +241,11 @@ ul {
 	$padding-top-album-foto: 20px;
 
 	.mySlider {
-		height: $height-img-slides + $height-img-thumbnails * 2;
-		width: $width-img-slides;
-		margin: $padding-top-album-foto auto;
+		height: var(--heightMySlider);
+		width: var(--widthMySlider);
+		// height: $height-img-slides + $height-img-thumbnails * 2;
+		// width: $width-img-slides;
+		margin: 0 auto;
 	}
 	.album-foto {
 		margin-top: $padding-top-album-foto;
@@ -260,8 +262,8 @@ ul {
 			height: $height-img-thumbnails;
 		}
 		img {
-			width: $width-img-thumbnails;
-			height: $height-img-thumbnails;
+			width: var(--widthImgThumbnails);
+			height: Var(--heightImgThumbnails);
 		}
 	}
 	.thumbnailsBefore {
@@ -274,16 +276,18 @@ ul {
 	}
 
 	.slides-foto-rotate {
-		width: $height-img-slides;
-		height: $height-img-slides;
+		// width: $height-img-slides;
+		// height: $height-img-slides;
+		width: var(--widthImgSlides);
+		height: var(--heightImgSlides);
 		padding-top: 0;
 
 		li {
 			padding-top: $padding-top-album-foto;
 		}
 		img {
-			height: $height-img-slides;
-			width: $width-img-slides;
+			width: var(--widthImgSlides);
+			height: var(--heightImgSlides);
 		}
 	}
 }

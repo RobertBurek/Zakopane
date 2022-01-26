@@ -37,7 +37,6 @@ body {
 .mySlider {
   height: var(--heightMySlider);
   width: var(--widthMySlider);
-  margin: 50px auto;
 }
 
 ul {
@@ -162,9 +161,9 @@ ul {
 /* ------------------RESPONZYWNOŚĆ-------------------- */
 @media (orientation: portrait) {
   .mySlider {
-    height: 420px;
-    width: 300px;
-    margin: 20px auto;
+    height: var(--heightMySlider);
+    width: var(--widthMySlider);
+    margin: 0 auto;
   }
   .album-foto {
     margin-top: 20px;
@@ -186,8 +185,8 @@ ul {
     height: 60px;
   }
   .thumbnails img {
-    width: 60px;
-    height: 60px;
+    width: var(--widthImgThumbnails);
+    height: Var(--heightImgThumbnails);
   }
   .thumbnailsBefore {
     position: relative;
@@ -198,16 +197,16 @@ ul {
     padding-top: 20px;
   }
   .slides-foto-rotate {
-    width: 300px;
-    height: 300px;
+    width: var(--widthImgSlides);
+    height: var(--heightImgSlides);
     padding-top: 0;
   }
   .slides-foto-rotate li {
     padding-top: 20px;
   }
   .slides-foto-rotate img {
-    height: 300px;
-    width: 300px;
+    width: var(--widthImgSlides);
+    height: var(--heightImgSlides);
   }
 }
 
