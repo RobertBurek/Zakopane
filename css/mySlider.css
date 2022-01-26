@@ -7,8 +7,8 @@ body {
 :root {
   --widthMySlider: 400px;
   --heightMySlider: 300px;
-  --heightImgThumbnails: 80px;
-  --widthImgThumbnails: 80px;
+  --heightImgThumbnails: 60px;
+  --widthImgThumbnails: 60px;
   --widthImgSlides: 400px;
   --heightImgSlides: 300px;
 }
@@ -54,7 +54,6 @@ ul {
   display: block;
   position: relative;
   top: 0;
-  width: 100%;
 }
 
 .thumbnails {
@@ -65,7 +64,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 10px;
+  padding-top: var(--paddingTopLiSlides);
 }
 
 .thumbnails li {
@@ -219,6 +218,7 @@ ul {
     display: flex;
     position: absolute;
     top: var(--paddingTopLiSlides);
+    margin-top: var(--marginTopLiSlides);
   }
 }
 /*# sourceMappingURL=mySlider.css.map */

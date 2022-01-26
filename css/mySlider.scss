@@ -10,8 +10,8 @@ body {
 :root {
   --widthMySlider: 400px;
   --heightMySlider: 300px;
-  --heightImgThumbnails: 80px;
-  --widthImgThumbnails: 80px;
+  --heightImgThumbnails: 60px;
+  --widthImgThumbnails: 60px;
   --widthImgSlides: 400px;
   --heightImgSlides: 300px;
 }
@@ -90,7 +90,7 @@ ul {
 
 	position: relative;
 	top: 0;
-	width: 100%;
+	// width: 100%;
 }
 
 // .slides-foto-ver li,
@@ -102,7 +102,8 @@ ul {
 	display: flex;
 	flex-direction: column;
 	// line-height: 0;
-	padding-top: $padding-top-album-foto;
+	padding-top: var(--paddingTopLiSlides);
+	// margin-top: var(--marginTopLiSlides);
   // --heightImgThumbnails: 80px;
   // --widthImgThumbnails: 80px;
 
@@ -292,6 +293,7 @@ ul {
 		display: flex;
 		position: absolute;
 		top: var(--paddingTopLiSlides);
+		margin-top: var(--marginTopLiSlides);
 	}
 }
 
