@@ -57,7 +57,8 @@ myFoto.style.setProperty(`--marginTopLiSlides`, `${marginTopLiSlides}px`);
   heightImgSlides = heightMySlider; //
   paddingTopLiSlides = Math.floor((currentHeight - heightImgSlides - heightImgThumbnails * 2) / 2);
   heightContainerMyFoto = document.querySelector("#myFoto .container").offsetHeight;
-  marginTopLiSlides = heightContainerMyFoto - paddingTopLiSlides;
+  paddingTopLiSlides = heightContainerMyFoto + paddingTopSection + 10;
+  marginTopLiSlides = 0;
   heightMyFoto = heightMySlider + heightContainerMyFoto + paddingTopSection + paddingBottomSection +paddingTopLiSlides;
   myFoto.style.setProperty(`--heightMySlider`, `${heightMySlider}px`);
   myFoto.style.setProperty(`--widthMySlider`, `${widthMySlider}px`);
@@ -86,7 +87,7 @@ function altitudeChanged() {
 
     // if ((currentWidth >= 100)&&(currentWidth <= 1000))
     if (currentHeight <= currentWidth)
-    { if ((currentWidth >= 100)&&(currentWidth <= 800)) {
+    { if ((currentWidth >= 100)&&(currentWidth <= 1000)) {
       console.log(currentWidth + " - " + currentHeight);
       paddingTopSection = 40;
       paddingBottomSection = 40;
@@ -100,7 +101,7 @@ function altitudeChanged() {
       widthImgSlides = currentWidth - widthImgThumbnails * 2;
       heightImgSlides = heightMySlider;
       paddingTopLiSlides = Math.floor((currentHeight - heightImgSlides) / 2);
-      heightContainerMyFoto = document.querySelector("#myFoto .container").offsetHeight;
+      // heightContainerMyFoto = document.querySelector("#myFoto .container").offsetHeight;
       marginTopLiSlides = heightContainerMyFoto - paddingTopLiSlides;
       heightMyFoto = heightMySlider + heightContainerMyFoto + paddingTopSection + paddingBottomSection +paddingTopLiSlides;
       myFoto.style.setProperty(`--heightMySlider`, `${heightMySlider}px`);
@@ -127,12 +128,18 @@ function altitudeChanged() {
       heightMyFoto = heightMySlider + heightContainerMyFoto + paddingTopSection + paddingBottomSection; //
       console.log(heightMyFoto);
       heightContainerMyFoto = document.querySelector("#myFoto .container").offsetHeight;
-      console.log(heightContainerMyFoto);
+      // console.log(heightContainerMyFoto);
       if (heightMyFoto < currentHeight) {
-        paddingTopLiSlides = heightContainerMyFoto + paddingTopSection;
+        paddingTopLiSlides = heightContainerMyFoto + paddingTopSection + 10;
+        marginTopLiSlides = 0;
+
         // paddingTopLiSlides = 0;
       } else {
-        paddingTopLiSlides = Math.floor((currentHeight - heightImgSlides) / 2);
+        paddingTopLiSlides = heightContainerMyFoto + paddingTopSection + 10;
+        marginTopLiSlides = 0;
+
+
+        // paddingTopLiSlides = Math.floor((currentHeight - heightImgSlides) / 2);
         // paddingTopLiSlides = 0;
       }
   

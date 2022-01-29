@@ -7,14 +7,14 @@ body {
   // --widthImgThumbnails: 80px;
 }
 
-:root {
-  --widthMySlider: 400px;
-  --heightMySlider: 300px;
-  --heightImgThumbnails: 60px;
-  --widthImgThumbnails: 60px;
-  --widthImgSlides: 400px;
-  --heightImgSlides: 300px;
-}
+// :root {
+//   --widthMySlider: 400px;
+//   --heightMySlider: 300px;
+//   --heightImgThumbnails: 60px;
+//   --widthImgThumbnails: 60px;
+//   --widthImgSlides: 400px;
+//   --heightImgSlides: 300px;
+// }
 
 // $width-img-slides: var(--widthMySlider);
 // $height-img-slides: var(--heightMySlider);
@@ -249,7 +249,8 @@ ul {
 	}
 	.album-foto {
 		// margin-top: $padding-top-album-foto;
-		margin-top: var(--paddingTopLiSlides);
+		// margin-top: var(--paddingTopLiSlides);
+		position: absolute;
 	}
 	.thumbnails {
 		flex-direction: row;

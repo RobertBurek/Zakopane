@@ -4,15 +4,6 @@ body {
   background-color: #868383;
 }
 
-:root {
-  --widthMySlider: 400px;
-  --heightMySlider: 300px;
-  --heightImgThumbnails: 60px;
-  --widthImgThumbnails: 60px;
-  --widthImgSlides: 400px;
-  --heightImgSlides: 300px;
-}
-
 *,
 *::before,
 *::after {
@@ -167,7 +158,7 @@ ul {
     margin: 0 auto;
   }
   .album-foto {
-    margin-top: var(--paddingTopLiSlides);
+    position: absolute;
   }
   .thumbnails {
     -webkit-box-orient: horizontal;

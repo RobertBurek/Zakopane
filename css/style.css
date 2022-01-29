@@ -416,7 +416,7 @@ iframe div.place-card.place-card-large {
 
 /* ------------------RESPONZYWNOŚĆ-------------------- */
 
-/* @media (max-width: 980px) {
+@media (max-width: 980px) {
     .video img {
         height: 400px;
     }
@@ -434,7 +434,7 @@ iframe div.place-card.place-card-large {
     iframe {
         height: 200px;
     }
-} */
+}
 
 @media (max-width: 800px) {
     /* .features-wrapper {
