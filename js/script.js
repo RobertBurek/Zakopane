@@ -2,7 +2,7 @@ let currentHeight = document.body.offsetHeight;
 let currentWidth = document.body.offsetWidth;
 // const root = document.querySelector(":root");
 let heightContainerMyFoto = document.querySelector("#myFoto .container").offsetHeight;
-const thumbnailsBefore = document.getElementsByClassName("thumbnailsBefore");
+// const thumbnailsBefore = document.getElementsByClassName("thumbnailsBefore");
 const myFoto = document.getElementById("myFoto");
 
 let paddingTopSection;
@@ -25,13 +25,13 @@ paddingBottomSection = 40;
 myFoto.style.setProperty(`--paddingTopSection`, `${paddingTopSection}px`);
 myFoto.style.setProperty(`--paddingBottomSection`, `${paddingBottomSection}px`);
 widthMySlider = currentWidth;
-heightMySlider = Math.floor(currentWidth * 10/16);
-widthImgThumbnails = Math.floor(heightMySlider/5);
-heightImgThumbnails = Math.floor(heightMySlider/5);
+heightMySlider = Math.floor(currentWidth * 10 / 16);
+widthImgThumbnails = Math.floor(heightMySlider / 5);
+heightImgThumbnails = Math.floor(heightMySlider / 5);
 heightMySlider = heightImgThumbnails * 5;
 widthImgSlides = currentWidth - widthImgThumbnails * 2;
 heightImgSlides = heightMySlider;
-paddingTopLiSlides = Math.floor((currentHeight-heightImgSlides)/2);
+paddingTopLiSlides = Math.floor((currentHeight - heightImgSlides) / 2);
 marginTopLiSlides = heightContainerMyFoto - paddingTopLiSlides;
 heightMyFoto = heightMySlider + heightContainerMyFoto + paddingTopSection + paddingBottomSection +paddingTopLiSlides;
 myFoto.style.setProperty(`--heightMySlider`, `${heightMySlider}px`);
@@ -49,13 +49,13 @@ myFoto.style.setProperty(`--marginTopLiSlides`, `${marginTopLiSlides}px`);
   myFoto.style.setProperty(`--paddingTopSection`, `${paddingTopSection}px`); //
   myFoto.style.setProperty(`--paddingBottomSection`, `${paddingBottomSection}px`); //
   widthMySlider = currentWidth; //
-  heightMySlider = Math.floor(currentWidth * 10/16); //
-  widthImgThumbnails = Math.floor(widthMySlider/5); //
-  heightImgThumbnails = Math.floor(widthMySlider/5); //
+  heightMySlider = Math.floor(currentWidth * 10 / 16); //
+  widthImgThumbnails = Math.floor(widthMySlider / 5); //
+  heightImgThumbnails = Math.floor(widthMySlider / 5); //
   widthMySlider = widthImgThumbnails * 5; //
   widthImgSlides = widthMySlider; //
   heightImgSlides = heightMySlider; //
-  paddingTopLiSlides = Math.floor((currentHeight-heightImgSlides)/2);
+  paddingTopLiSlides = Math.floor((currentHeight - heightImgSlides - heightImgThumbnails * 2) / 2);
   heightContainerMyFoto = document.querySelector("#myFoto .container").offsetHeight;
   marginTopLiSlides = heightContainerMyFoto - paddingTopLiSlides;
   heightMyFoto = heightMySlider + heightContainerMyFoto + paddingTopSection + paddingBottomSection +paddingTopLiSlides;
@@ -93,13 +93,13 @@ function altitudeChanged() {
       myFoto.style.setProperty(`--paddingTopSection`, `${paddingTopSection}px`);
       myFoto.style.setProperty(`--paddingBottomSection`, `${paddingBottomSection}px`);
       widthMySlider = currentWidth;
-      heightMySlider = Math.floor(currentWidth * 10/16);
-      widthImgThumbnails = Math.floor(heightMySlider/5);
-      heightImgThumbnails = Math.floor(heightMySlider/5);
+      heightMySlider = Math.floor(currentWidth * 10 / 16);
+      widthImgThumbnails = Math.floor(heightMySlider / 5);
+      heightImgThumbnails = Math.floor(heightMySlider / 5);
       heightMySlider = heightImgThumbnails * 5;
       widthImgSlides = currentWidth - widthImgThumbnails * 2;
       heightImgSlides = heightMySlider;
-      paddingTopLiSlides = Math.floor((currentHeight-heightImgSlides)/2);
+      paddingTopLiSlides = Math.floor((currentHeight - heightImgSlides) / 2);
       heightContainerMyFoto = document.querySelector("#myFoto .container").offsetHeight;
       marginTopLiSlides = heightContainerMyFoto - paddingTopLiSlides;
       heightMyFoto = heightMySlider + heightContainerMyFoto + paddingTopSection + paddingBottomSection +paddingTopLiSlides;
@@ -113,21 +113,32 @@ function altitudeChanged() {
       myFoto.style.setProperty(`--paddingTopLiSlides`, `${paddingTopLiSlides}px`);
       myFoto.style.setProperty(`--marginTopLiSlides`, `${marginTopLiSlides}px`);
     }} else {
-      paddingTopSection = 0; //
-      paddingBottomSection = 0; //
+      paddingTopSection = 20; //
+      paddingBottomSection = 20; //
       myFoto.style.setProperty(`--paddingTopSection`, `${paddingTopSection}px`); //
       myFoto.style.setProperty(`--paddingBottomSection`, `${paddingBottomSection}px`); //
       widthMySlider = currentWidth; //
-      heightMySlider = Math.floor(currentWidth * 10/16); //
-      widthImgThumbnails = Math.floor(widthMySlider/5); //
-      heightImgThumbnails = Math.floor(widthMySlider/5); //
+      heightImgSlides = Math.floor(currentWidth * 10 / 16); //
+      widthImgThumbnails = Math.floor(widthMySlider / 5); //
+      heightImgThumbnails = Math.floor(widthMySlider / 5); //
       widthMySlider = widthImgThumbnails * 5; //
       widthImgSlides = widthMySlider; //
-      heightImgSlides = heightMySlider; //
-      paddingTopLiSlides = Math.floor((currentHeight-heightImgSlides)/2);
+      heightMySlider = heightImgSlides + heightImgThumbnails * 2; //
+      heightMyFoto = heightMySlider + heightContainerMyFoto + paddingTopSection + paddingBottomSection; //
+      console.log(heightMyFoto);
       heightContainerMyFoto = document.querySelector("#myFoto .container").offsetHeight;
-      marginTopLiSlides = heightContainerMyFoto - paddingTopLiSlides;
-      heightMyFoto = heightMySlider + heightContainerMyFoto + paddingTopSection + paddingBottomSection +paddingTopLiSlides;
+      console.log(heightContainerMyFoto);
+      if (heightMyFoto < currentHeight) {
+        paddingTopLiSlides = heightContainerMyFoto + paddingTopSection;
+        // paddingTopLiSlides = 0;
+      } else {
+        paddingTopLiSlides = Math.floor((currentHeight - heightImgSlides) / 2);
+        // paddingTopLiSlides = 0;
+      }
+  
+
+      // marginTopLiSlides = heightContainerMyFoto - paddingTopLiSlides;
+      // heightMyFoto = heightMySlider + heightImgThumbnails * 2 + heightContainerMyFoto + paddingTopSection + paddingBottomSection;// +paddingTopLiSlides;
       myFoto.style.setProperty(`--heightMySlider`, `${heightMySlider}px`);
       myFoto.style.setProperty(`--widthMySlider`, `${widthMySlider}px`);
       myFoto.style.setProperty(`--widthImgThumbnails`, `${widthImgThumbnails}px`);

@@ -167,7 +167,7 @@ ul {
     margin: 0 auto;
   }
   .album-foto {
-    margin-top: 20px;
+    margin-top: var(--paddingTopLiSlides);
   }
   .thumbnails {
     -webkit-box-orient: horizontal;
@@ -180,10 +180,6 @@ ul {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
-    height: 60px;
-  }
-  .thumbnails a {
-    height: 60px;
   }
   .thumbnails img {
     width: var(--widthImgThumbnails);
@@ -191,11 +187,11 @@ ul {
   }
   .thumbnailsBefore {
     position: relative;
-    top: 20px;
+    top: var(--paddingTopLiSlides);
     z-index: 4;
   }
   .thumbnailsAfter {
-    padding-top: 20px;
+    padding-top: var(--paddingTopLiSlides);
   }
   .slides-foto-rotate {
     width: var(--widthImgSlides);
@@ -203,7 +199,7 @@ ul {
     padding-top: 0;
   }
   .slides-foto-rotate li {
-    padding-top: 20px;
+    padding-top: var(--paddingTopLiSlides);
   }
   .slides-foto-rotate img {
     width: var(--widthImgSlides);

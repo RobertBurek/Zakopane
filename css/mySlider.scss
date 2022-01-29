@@ -20,7 +20,7 @@ body {
 // $height-img-slides: var(--heightMySlider);
 // $width-img-thumbnails : 80px;
 // $height-img-thumbnails : 120px;
-$quantity-thumbnails: 5;
+// $quantity-thumbnails: 5;
 // $width-img-thumbnails: $height-img-slides / $quantity-thumbnails;
 // $height-img-thumbnails: $height-img-slides / $quantity-thumbnails;
 // $width-img-thumbnails: var(--widthImgThumbnails);
@@ -28,7 +28,7 @@ $quantity-thumbnails: 5;
 // $width-img-slides : 600 + $width-img-thumbnails;
 // $frfr : 100vh;
 // $padding-top-album-foto : ($frfr - $height-img-slides) / 2;
-$padding-top-album-foto: 10px;
+// $padding-top-album-foto: 10px;
 
 // :root {
 //   --quantityThumbnails: rgb(189, 23, 23);
@@ -233,12 +233,12 @@ ul {
 /* ------------------RESPONZYWNOŚĆ-------------------- */
 
 @media (orientation: portrait) {
-	$width-img-slides: 300px;
-	$height-img-slides: 300px;
-	$quantity-thumbnails: 5;
-	$width-img-thumbnails: $width-img-slides / $quantity-thumbnails;
-	$height-img-thumbnails: $height-img-slides / 5;
-	$padding-top-album-foto: 20px;
+	// $width-img-slides: 300px;
+	// $height-img-slides: 300px;
+	// $quantity-thumbnails: 5;
+	// $width-img-thumbnails: $width-img-slides / $quantity-thumbnails;
+	// $height-img-thumbnails: $height-img-slides / 5;
+	// $padding-top-album-foto: 20px;
 
 	.mySlider {
 		height: var(--heightMySlider);
@@ -248,7 +248,8 @@ ul {
 		margin: 0 auto;
 	}
 	.album-foto {
-		margin-top: $padding-top-album-foto;
+		// margin-top: $padding-top-album-foto;
+		margin-top: var(--paddingTopLiSlides);
 	}
 	.thumbnails {
 		flex-direction: row;
@@ -256,10 +257,10 @@ ul {
 
 		li {
 			flex: none;
-			height: $height-img-thumbnails;
+			// height: $height-img-thumbnails;
 		}
 		a {
-			height: $height-img-thumbnails;
+			// height: $height-img-thumbnails;
 		}
 		img {
 			width: var(--widthImgThumbnails);
@@ -268,11 +269,13 @@ ul {
 	}
 	.thumbnailsBefore {
 		position: relative;
-		top: $padding-top-album-foto;
+		// top: $padding-top-album-foto;
+		top: var(--paddingTopLiSlides);
 		z-index: 4;
 	}
 	.thumbnailsAfter {
-		padding-top: $padding-top-album-foto;
+		// padding-top: $padding-top-album-foto;
+		padding-top: var(--paddingTopLiSlides);;
 	}
 
 	.slides-foto-rotate {
@@ -283,7 +286,8 @@ ul {
 		padding-top: 0;
 
 		li {
-			padding-top: $padding-top-album-foto;
+			// padding-top: $padding-top-album-foto;
+			padding-top: var(--paddingTopLiSlides);
 		}
 		img {
 			width: var(--widthImgSlides);
