@@ -4,7 +4,6 @@ let mainTitle = document.querySelector(".main-title");
 let mainSubtitle = document.querySelector(".main-subtitle");
 
 let next = 0;
-// console.log("dfdfdfdf1111111");
 
 function hideBackgroundSlides() {
     for(var i = 0; i < slidersBackground.length; i++) {
